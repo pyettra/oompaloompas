@@ -56,15 +56,39 @@
 		6CCE390C2385849D0078B8CB /* OompaLoompa */ = {
 			isa = PBXGroup;
 			children = (
-				6CCE390D2385849D0078B8CB /* AppDelegate.swift */,
-				6CCE390F2385849D0078B8CB /* SceneDelegate.swift */,
-				6CCE39112385849D0078B8CB /* ViewController.swift */,
-				6CCE39132385849D0078B8CB /* Main.storyboard */,
-				6CCE3916238584A10078B8CB /* Assets.xcassets */,
-				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
+				6CCE3923238584F10078B8CB /* Controller */,
+				6CCE3922238584EC0078B8CB /* View */,
+				6CCE3921238584E20078B8CB /* Model */,
 				6CCE391B238584A10078B8CB /* Info.plist */,
 			);
 			path = OompaLoompa;
+			sourceTree = "<group>";
+		};
+		6CCE3921238584E20078B8CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CCE3922238584EC0078B8CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE39132385849D0078B8CB /* Main.storyboard */,
+				6CCE3916238584A10078B8CB /* Assets.xcassets */,
+				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6CCE3923238584F10078B8CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6CCE39112385849D0078B8CB /* ViewController.swift */,
+				6CCE390D2385849D0078B8CB /* AppDelegate.swift */,
+				6CCE390F2385849D0078B8CB /* SceneDelegate.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
