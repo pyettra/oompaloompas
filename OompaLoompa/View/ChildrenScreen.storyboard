@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Children View Controller-->
+        <scene sceneID="jiL-pH-M1M">
+            <objects>
+                <viewController storyboardIdentifier="children" id="o3v-p5-ZCN" customClass="ChildrenViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L7w-8f-3q9">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gzo-QQ-nt1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="shP-ES-wOi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1KF-zr-hz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578.90625" y="-176.13469985358711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YFN-yG-WrN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="35k-8q-VMr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CNI-mb-Ekf">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o3v-p5-ZCN" kind="relationship" relationship="rootViewController" id="JxI-1D-TU4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RTy-Re-FJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146.484375" y="-176.13469985358711"/>
+        </scene>
+        <!--receiveMail-->
+        <scene sceneID="d6v-0L-Yi2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="receiveMail" storyboardName="ReceiveMail" referencedIdentifier="receiveMail" id="GvM-G9-s9m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvR-vq-YCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-311"/>
+        </scene>
+        <!--sendMail-->
+        <scene sceneID="9Bg-S7-4zc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="sendMail" storyboardName="SendMail" referencedIdentifier="sendMail" id="EKb-iS-Gv6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUf-r7-tlV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-176"/>
+        </scene>
+        <!--parentConfig-->
+        <scene sceneID="En7-No-cHE">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="parentConfig" storyboardName="ParentConfiguration" referencedIdentifier="parentConfig" id="eWL-sT-qJe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDM-o3-FCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-43"/>
+        </scene>
+    </scenes>
+</document>
