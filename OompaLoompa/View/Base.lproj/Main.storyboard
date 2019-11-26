@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B3A-dL-B7s">
     <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="130"/>
+            <point key="canvasLocation" x="138.8671875" y="129.57540263543191"/>
         </scene>
         <!--login-->
         <scene sceneID="X5T-UJ-o4I">
@@ -29,6 +29,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nT2-cx-27U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="673" y="130"/>
+        </scene>
+        <!--On Board View Controller-->
+        <scene sceneID="KOq-EP-Ych">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="B3A-dL-B7s" customClass="OnBoardViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPh-O7-7uL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d8l-Wd-7mW">
+            <objects>
+                <viewController storyboardIdentifier="roxo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wq0-AM-lgl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wuB-5F-Xga">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="CYl-zj-v3g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vLf-Tu-i6E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFi-mf-PXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1779" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Tt-vf-UBf">
+            <objects>
+                <viewController storyboardIdentifier="verde" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gqT-mV-EqS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oNa-YR-pG3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lso-om-ffd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U8c-6U-euD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybC-oZ-MIG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2403" y="130"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="brr-Af-975">
+            <objects>
+                <viewController storyboardIdentifier="azul" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8PE-Qz-Law" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2fQ-7Y-Zuo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="phY-JJ-qU4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61q-Y9-Hbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3027" y="130"/>
         </scene>
     </scenes>
 </document>
