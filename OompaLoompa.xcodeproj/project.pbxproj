@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340021B1238D46A6005CDD09 /* RespondidasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340021B0238D46A6005CDD09 /* RespondidasCell.swift */; };
+		340021B3238D46D9005CDD09 /* NRespondidasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340021B2238D46D9005CDD09 /* NRespondidasCell.swift */; };
 		6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390D2385849D0078B8CB /* AppDelegate.swift */; };
 		6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390F2385849D0078B8CB /* SceneDelegate.swift */; };
 		6CCE39122385849D0078B8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39112385849D0078B8CB /* ViewController.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		340021B0238D46A6005CDD09 /* RespondidasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespondidasCell.swift; sourceTree = "<group>"; };
+		340021B2238D46D9005CDD09 /* NRespondidasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NRespondidasCell.swift; sourceTree = "<group>"; };
 		6CCE390A2385849D0078B8CB /* OompaLoompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OompaLoompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE390D2385849D0078B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE390F2385849D0078B8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				6CCE392E238820C80078B8CB /* SendMail.storyboard */,
 				6CCE3930238820F00078B8CB /* ReceiveMail.storyboard */,
 				6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */,
+				340021B0238D46A6005CDD09 /* RespondidasCell.swift */,
+				340021B2238D46D9005CDD09 /* NRespondidasCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,9 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCE39332388213F0078B8CB /* ReceiveMailViewController.swift in Sources */,
+				340021B1238D46A6005CDD09 /* RespondidasCell.swift in Sources */,
 				6CCE3927238819A70078B8CB /* LoginViewController.swift in Sources */,
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
+				340021B3238D46D9005CDD09 /* NRespondidasCell.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
 				6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */,
@@ -349,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = NX8F6TU7X3;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -367,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = NX8F6TU7X3;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
