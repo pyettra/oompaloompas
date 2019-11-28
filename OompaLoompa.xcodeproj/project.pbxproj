@@ -23,9 +23,14 @@
 		6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3934238821A40078B8CB /* SendMailViewController.swift */; };
 		6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */; };
 		6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */; };
+		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
+		EF868275995DB0E7C8396837 /* Pods_OompaLoompa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1006D8E018D4A467541440 /* Pods_OompaLoompa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DAC7EA280FAA79A0BDE1996 /* Pods-OompaLoompa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OompaLoompa.debug.xcconfig"; path = "Target Support Files/Pods-OompaLoompa/Pods-OompaLoompa.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1006D8E018D4A467541440 /* Pods_OompaLoompa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OompaLoompa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639A6487656D16994B60CD23 /* Pods-OompaLoompa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OompaLoompa.release.xcconfig"; path = "Target Support Files/Pods-OompaLoompa/Pods-OompaLoompa.release.xcconfig"; sourceTree = "<group>"; };
 		6CCE390A2385849D0078B8CB /* OompaLoompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OompaLoompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE390D2385849D0078B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE390F2385849D0078B8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		6CCE3934238821A40078B8CB /* SendMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailViewController.swift; sourceTree = "<group>"; };
 		6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentConfiguration.storyboard; sourceTree = "<group>"; };
 		6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConfigurationViewController.swift; sourceTree = "<group>"; };
+		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF868275995DB0E7C8396837 /* Pods_OompaLoompa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B77B5FD9984EDCC1AA965C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E1006D8E018D4A467541440 /* Pods_OompaLoompa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6CCE39012385849D0078B8CB = {
 			isa = PBXGroup;
 			children = (
 				6CCE390C2385849D0078B8CB /* OompaLoompa */,
 				6CCE390B2385849D0078B8CB /* Products */,
+				B35453F149EF9BAA0699EF3B /* Pods */,
+				3B77B5FD9984EDCC1AA965C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,8 +134,19 @@
 				6CCE39322388213F0078B8CB /* ReceiveMailViewController.swift */,
 				6CCE3934238821A40078B8CB /* SendMailViewController.swift */,
 				6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */,
+				CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B35453F149EF9BAA0699EF3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DAC7EA280FAA79A0BDE1996 /* Pods-OompaLoompa.debug.xcconfig */,
+				639A6487656D16994B60CD23 /* Pods-OompaLoompa.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CCE391E238584A20078B8CB /* Build configuration list for PBXNativeTarget "OompaLoompa" */;
 			buildPhases = (
+				4673783353AACEF0B2101459 /* [CP] Check Pods Manifest.lock */,
 				6CCE39062385849D0078B8CB /* Sources */,
 				6CCE39072385849D0078B8CB /* Frameworks */,
 				6CCE39082385849D0078B8CB /* Resources */,
@@ -192,6 +221,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4673783353AACEF0B2101459 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OompaLoompa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6CCE39062385849D0078B8CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,6 +258,7 @@
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
 				6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */,
+				CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */,
 				6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +401,7 @@
 		};
 		6CCE391F238584A20078B8CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DAC7EA280FAA79A0BDE1996 /* Pods-OompaLoompa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -364,6 +420,7 @@
 		};
 		6CCE3920238584A20078B8CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639A6487656D16994B60CD23 /* Pods-OompaLoompa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
