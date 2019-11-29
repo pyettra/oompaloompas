@@ -8,7 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OBCollectionCell"+String(indexPath.row), for: indexPath) as? OnboardCollectionViewCell1 else { return UICollectionViewCell() }
+//            cell.arteImgView.image =
+        cell.instructionsLabel.text = String(indexPath.row)
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
