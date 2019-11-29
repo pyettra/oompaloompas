@@ -41,13 +41,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-wH-5B5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-wH-5B5">
                                                     <rect key="frame" x="30" y="1156" width="740" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xvx-PX-gNd">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="moana" translatesAutoresizingMaskIntoConstraints="NO" id="xvx-PX-gNd">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                                 </imageView>
                                             </subviews>
@@ -74,13 +74,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-iN-ygl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-iN-ygl">
                                                     <rect key="frame" x="30" y="1156" width="740" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="87p-qE-XcV">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="anna" translatesAutoresizingMaskIntoConstraints="NO" id="87p-qE-XcV">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                                 </imageView>
                                             </subviews>
@@ -107,13 +107,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-F3-WWN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-F3-WWN">
                                                     <rect key="frame" x="30" y="1156" width="740" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFl-LM-TA6">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="elsa" translatesAutoresizingMaskIntoConstraints="NO" id="dFl-LM-TA6">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                                 </imageView>
                                             </subviews>
@@ -140,13 +140,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-4S-FYM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-4S-FYM">
                                                     <rect key="frame" x="30" y="1156" width="740" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-dg-0cj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="moana" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-dg-0cj">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                                 </imageView>
                                             </subviews>
@@ -173,13 +173,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q73-uY-G5n">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q73-uY-G5n">
                                                     <rect key="frame" x="30" y="1156" width="740" height="98"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-jp-C47">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="anna" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-jp-C47">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1136"/>
                                                 </imageView>
                                             </subviews>
@@ -211,6 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="onboardCollection" destination="c6s-we-Lma" id="oCV-sK-rPD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,7 +227,12 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nT2-cx-27U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="130"/>
+            <point key="canvasLocation" x="543" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="anna" width="785" height="640"/>
+        <image name="elsa" width="400" height="500"/>
+        <image name="moana" width="1280" height="720"/>
+    </resources>
 </document>

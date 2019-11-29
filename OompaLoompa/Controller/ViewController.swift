@@ -10,20 +10,21 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var onboardCollection: UICollectionView!
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OBCollectionCell"+String(indexPath.row), for: indexPath) as? OnboardCollectionViewCell1 else { return UICollectionViewCell() }
-//            cell.arteImgView.image =
-        cell.instructionsLabel.text = String(indexPath.row)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OBCollectionCell"+String(indexPath.row + 1), for: indexPath) as? UICollectionViewCell else { return UICollectionViewCell() }
         return cell
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        onboardCollection.delegate = self
+        onboardCollection.dataSource = self
         // Do any additional setup after loading the view.
     }
     
