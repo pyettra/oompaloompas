@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C1147B2238D47A7008821AE /* ChildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147B1238D47A7008821AE /* ChildTableViewController.swift */; };
+		6C1147B4238D4C32008821AE /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147B3238D4C32008821AE /* Child.swift */; };
+		6C1147B8238D530C008821AE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147B7238D530C008821AE /* Model.swift */; };
+		6C1147BB238EA585008821AE /* ChildCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147B9238EA585008821AE /* ChildCard.swift */; };
+		6C1147BC238EA585008821AE /* ChildCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1147BA238EA585008821AE /* ChildCard.xib */; };
+		6C1147C023900674008821AE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147BF23900674008821AE /* ModalViewController.swift */; };
 		6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390D2385849D0078B8CB /* AppDelegate.swift */; };
 		6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390F2385849D0078B8CB /* SceneDelegate.swift */; };
 		6CCE39122385849D0078B8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39112385849D0078B8CB /* ViewController.swift */; };
@@ -14,7 +20,6 @@
 		6CCE3917238584A10078B8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3916238584A10078B8CB /* Assets.xcassets */; };
 		6CCE391A238584A10078B8CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */; };
 		6CCE39252388197E0078B8CB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE39242388197E0078B8CB /* Login.storyboard */; };
-		6CCE3927238819A70078B8CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3926238819A70078B8CB /* LoginViewController.swift */; };
 		6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE392A23881F290078B8CB /* ChildrenScreen.storyboard */; };
 		6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE392C23881F5C0078B8CB /* ChildrenViewController.swift */; };
 		6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE392E238820C80078B8CB /* SendMail.storyboard */; };
@@ -28,9 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DAC7EA280FAA79A0BDE1996 /* Pods-OompaLoompa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OompaLoompa.debug.xcconfig"; path = "Target Support Files/Pods-OompaLoompa/Pods-OompaLoompa.debug.xcconfig"; sourceTree = "<group>"; };
-		5E1006D8E018D4A467541440 /* Pods_OompaLoompa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OompaLoompa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		639A6487656D16994B60CD23 /* Pods-OompaLoompa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OompaLoompa.release.xcconfig"; path = "Target Support Files/Pods-OompaLoompa/Pods-OompaLoompa.release.xcconfig"; sourceTree = "<group>"; };
+		6C1147B1238D47A7008821AE /* ChildTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTableViewController.swift; sourceTree = "<group>"; };
+		6C1147B3238D4C32008821AE /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Child.swift; path = OompaLoompa/Controller/Child.swift; sourceTree = SOURCE_ROOT; };
+		6C1147B7238D530C008821AE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = OompaLoompa/Controller/Model.swift; sourceTree = SOURCE_ROOT; };
+		6C1147B9238EA585008821AE /* ChildCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCard.swift; sourceTree = "<group>"; };
+		6C1147BA238EA585008821AE /* ChildCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildCard.xib; sourceTree = "<group>"; };
+		6C1147BF23900674008821AE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = OompaLoompa/View/ModalViewController.swift; sourceTree = SOURCE_ROOT; };
 		6CCE390A2385849D0078B8CB /* OompaLoompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OompaLoompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE390D2385849D0078B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE390F2385849D0078B8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +48,6 @@
 		6CCE3919238584A10078B8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CCE391B238584A10078B8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCE39242388197E0078B8CB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		6CCE3926238819A70078B8CB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6CCE392A23881F290078B8CB /* ChildrenScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChildrenScreen.storyboard; sourceTree = "<group>"; };
 		6CCE392C23881F5C0078B8CB /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
 		6CCE392E238820C80078B8CB /* SendMail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendMail.storyboard; sourceTree = "<group>"; };
@@ -104,6 +111,8 @@
 		6CCE3921238584E20078B8CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6C1147B3238D4C32008821AE /* Child.swift */,
+				6C1147B7238D530C008821AE /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +122,8 @@
 			children = (
 				6CCE39132385849D0078B8CB /* Main.storyboard */,
 				6CCE3916238584A10078B8CB /* Assets.xcassets */,
+				6C1147B9238EA585008821AE /* ChildCard.swift */,
+				6C1147BA238EA585008821AE /* ChildCard.xib */,
 				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
 				6CCE39242388197E0078B8CB /* Login.storyboard */,
 				6CCE392A23881F290078B8CB /* ChildrenScreen.storyboard */,
@@ -126,14 +137,15 @@
 		6CCE3923238584F10078B8CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6C1147BF23900674008821AE /* ModalViewController.swift */,
 				6CCE39112385849D0078B8CB /* ViewController.swift */,
 				6CCE390D2385849D0078B8CB /* AppDelegate.swift */,
 				6CCE390F2385849D0078B8CB /* SceneDelegate.swift */,
-				6CCE3926238819A70078B8CB /* LoginViewController.swift */,
 				6CCE392C23881F5C0078B8CB /* ChildrenViewController.swift */,
 				6CCE39322388213F0078B8CB /* ReceiveMailViewController.swift */,
 				6CCE3934238821A40078B8CB /* SendMailViewController.swift */,
 				6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */,
+				6C1147B1238D47A7008821AE /* ChildTableViewController.swift */,
 				CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */,
 			);
 			path = Controller;
@@ -212,6 +224,7 @@
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
 				6CCE391A238584A10078B8CB /* LaunchScreen.storyboard in Resources */,
+				6C1147BC238EA585008821AE /* ChildCard.xib in Resources */,
 				6CCE3917238584A10078B8CB /* Assets.xcassets in Resources */,
 				6CCE39152385849D0078B8CB /* Main.storyboard in Resources */,
 				6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */,
@@ -252,12 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCE39332388213F0078B8CB /* ReceiveMailViewController.swift in Sources */,
-				6CCE3927238819A70078B8CB /* LoginViewController.swift in Sources */,
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
+				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
 				6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */,
+				6C1147B2238D47A7008821AE /* ChildTableViewController.swift in Sources */,
+				6C1147BB238EA585008821AE /* ChildCard.swift in Sources */,
+				6C1147B8238D530C008821AE /* Model.swift in Sources */,
+				6C1147B4238D4C32008821AE /* Child.swift in Sources */,
 				CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */,
 				6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */,
 			);
