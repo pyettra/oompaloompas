@@ -8,11 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
     @IBOutlet weak var onboardCollection: UICollectionView!
+    @IBOutlet weak var onBoardPageControl: UIPageControl!
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: UIScreen.main.bounds.width, height: onboardCollection.bounds.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -20,6 +38,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let width = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / width
+        let roundedIndex = round(index)
+        self.onBoardPageControl.currentPage = Int(roundedIndex)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +52,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func next(_ sender: Any) {
+    @IBAction func nextOnboardAction(_ sender: Any) {
+        
         var storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
         var vc = storyboard.instantiateViewController(identifier: "login") as ChildTableViewController
         vc.modalPresentationStyle = .fullScreen
         self.show(vc, sender: self)
     }
-    
 
 }
 
