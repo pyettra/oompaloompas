@@ -34,7 +34,6 @@
 		6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3934238821A40078B8CB /* SendMailViewController.swift */; };
 		6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */; };
 		6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */; };
-		CD1384D7239551BC009B28A8 /* Dobra.alias in Resources */ = {isa = PBXBuildFile; fileRef = CD1384D6239551BC009B28A8 /* Dobra.alias */; };
 		CD1384D9239551ED009B28A8 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1384D8239551ED009B28A8 /* Animation.storyboard */; };
 		CD1384DB23955213009B28A8 /* FoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1384DA23955213009B28A8 /* FoldViewController.swift */; };
 		CD1384DD2395C099009B28A8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1384DC2395C099009B28A8 /* GameScene.swift */; };
@@ -72,7 +71,6 @@
 		6CCE3934238821A40078B8CB /* SendMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailViewController.swift; sourceTree = "<group>"; };
 		6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentConfiguration.storyboard; sourceTree = "<group>"; };
 		6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConfigurationViewController.swift; sourceTree = "<group>"; };
-		CD1384D6239551BC009B28A8 /* Dobra.alias */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Dobra.alias; sourceTree = "<group>"; };
 		CD1384D8239551ED009B28A8 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
 		CD1384DA23955213009B28A8 /* FoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldViewController.swift; sourceTree = "<group>"; };
 		CD1384DC2395C099009B28A8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -118,6 +116,7 @@
 		6CCE390C2385849D0078B8CB /* OompaLoompa */ = {
 			isa = PBXGroup;
 			children = (
+				6CCE3916238584A10078B8CB /* Assets.xcassets */,
 				6CCE3923238584F10078B8CB /* Controller */,
 				6CCE3922238584EC0078B8CB /* View */,
 				6CCE3921238584E20078B8CB /* Model */,
@@ -139,10 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				6CCE39132385849D0078B8CB /* Main.storyboard */,
-				6CCE3916238584A10078B8CB /* Assets.xcassets */,
 				6C1147B9238EA585008821AE /* ChildCard.swift */,
 				6C1147BA238EA585008821AE /* ChildCard.xib */,
-				CD1384D6239551BC009B28A8 /* Dobra.alias */,
 				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
 				6C22D3DE23913EFA00C63939 /* RespondidasCell.swift */,
 				6CCE39242388197E0078B8CB /* Login.storyboard */,
@@ -238,7 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
-				CD1384D7239551BC009B28A8 /* Dobra.alias in Resources */,
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
 				6CCE391A238584A10078B8CB /* LaunchScreen.storyboard in Resources */,
@@ -264,7 +260,6 @@
 				429ADD002391555D009A4B53 /* OnboardCollectionViewCell2.swift in Sources */,
 				429ADD022391556D009A4B53 /* OnboardCollectionViewCell3.swift in Sources */,
 				CD1384DB23955213009B28A8 /* FoldViewController.swift in Sources */,
-				6CCE3927238819A70078B8CB /* LoginViewController.swift in Sources */,
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
 				429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,

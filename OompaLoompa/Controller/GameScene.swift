@@ -12,39 +12,49 @@ import SpriteKit
 class GameScene: SKScene {
     
     private var letter = SKSpriteNode()
-    private var foldLetterFrames: [SKTexture] = []
+    private var foldLetterFrames: [[SKTexture]] = []
+    var animateStep = 0
     
     override func didMove(to view: SKView) {
-      backgroundColor = .blue
+      backgroundColor = .white
+        buildLetter()
         animateLetter()
     }
     
     func buildLetter() {
-      let letterAnimatedAtlas = SKTextureAtlas(named: "Dobra")
-      var foldFrames: [SKTexture] = []
+      let letterAnimatedAtlas = SKTextureAtlas(named: "dobra")
 
-      let numImages = letterAnimatedAtlas.textureNames.count
-      for i in 1...numImages {
-        let bearTextureName = "bear\(i)"
-        foldFrames.append(letterAnimatedAtlas.textureNamed(bearTextureName))
+        for texture in letterAnimatedAtlas.textureNames.sorted() {
+        //quebra o nome em partes, o que tiver antes do _ é o passo e o que tiver depois é o frame.
+            let pedacos = texture.components(separatedBy: "_")
+            let index = Int(pedacos[0])! - 1 //qual pedaço da animação vai tocar
+            
+            if foldLetterFrames.count > index  {
+                foldLetterFrames[index].append(letterAnimatedAtlas.textureNamed(texture))
+            } else {
+                foldLetterFrames.append([letterAnimatedAtlas.textureNamed(texture)])
+            }
       }
-      foldLetterFrames = foldFrames
-        
-        let firstFrameTexture = foldLetterFrames[0]
+     
+            let firstFrameTexture = foldLetterFrames[0][0]
         letter = SKSpriteNode(texture: firstFrameTexture)
         letter.position = CGPoint(x: frame.midX, y: frame.midY)
         addChild(letter)
-        
-        buildLetter()
+
     }
     
     func animateLetter() {
-      letter.run(SKAction.repeatForever(
-        SKAction.animate(with: foldLetterFrames,
-                         timePerFrame: 0.1,
-                         resize: false,
-                         restore: true)),
-        withKey:"walkingInPlaceBear")
+        if animateStep < foldLetterFrames.count {
+            letter.run(
+            SKAction.animate(with: foldLetterFrames[animateStep],
+                             timePerFrame: 0.6,
+                             resize: false,
+                             restore: false))
+            animateStep += 1
+            //tocar o som de dobra de papel ***
+        } else {
+            print("acabou a dobradura")
+        }
     }
 }
 

@@ -10,17 +10,27 @@
         <!--Fold View Controller-->
         <scene sceneID="zCc-Z9-cbu">
             <objects>
-                <viewController id="Gyc-lO-Wt6" customClass="FoldViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="acy-F5-XL1">
+                <viewController storyboardIdentifier="animation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gyc-lO-Wt6" customClass="FoldViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acy-F5-XL1" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-yB-rJq">
+                                <rect key="frame" x="479" y="1101" width="101" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Próximo passo"/>
+                                <connections>
+                                    <action selector="proximo:" destination="Gyc-lO-Wt6" eventType="touchUpInside" id="QnG-Y6-raa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Ui8-h6-08m"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFc-Ms-G8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381" y="129"/>
+            <point key="canvasLocation" x="-381.4453125" y="128.69692532942898"/>
         </scene>
     </scenes>
 </document>
