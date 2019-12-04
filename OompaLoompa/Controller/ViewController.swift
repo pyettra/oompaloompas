@@ -8,13 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet weak var onboardCollection: UICollectionView!
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OBCollectionCell"+String(indexPath.row + 1), for: indexPath) as? UICollectionViewCell else { return UICollectionViewCell() }
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        onboardCollection.delegate = self
+        onboardCollection.dataSource = self
         // Do any additional setup after loading the view.
+        
+        
     }
+    
+    @IBAction func animate(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Animation", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "animation") as FoldViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.show(vc, sender: self)
 
+    }
+    
+    @IBAction func next(_ sender: Any) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
+        var vc = storyboard.instantiateViewController(identifier: "login") as ChildTableViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.show(vc, sender: self)
+    }
+    
 
 }
 
