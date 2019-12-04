@@ -50,6 +50,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         onboardCollection.delegate = self
         onboardCollection.dataSource = self
         // Do any additional setup after loading the view.
+        
+        
     }
     
     @IBAction func nextOnboardAction(_ sender: Any) {
