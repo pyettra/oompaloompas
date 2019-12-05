@@ -18,6 +18,11 @@ class ChildTableViewController: UIViewController, ModalViewControllerDelegate {
         childrenCollectionView.delegate = self
         childrenCollectionView.dataSource = self
         childrenCollectionView.register(UINib(nibName: "ChildCard", bundle: nil), forCellWithReuseIdentifier: "cell")
+        NotificationCenter.default.addObserver(self, selector: #selector(reloadCollection), name: NSNotification.Name("atualizaChildren"), object: nil)
+    }
+    
+    @objc func reloadCollection(_ notification: Notification) {
+        childrenCollectionView.reloadData()
     }
     
     
@@ -29,7 +34,6 @@ class ChildTableViewController: UIViewController, ModalViewControllerDelegate {
     
     func overlayBlurredBackgroundView() {
         let blurredBackgroundView = UIVisualEffectView()
-        
         blurredBackgroundView.frame = view.frame
         blurredBackgroundView.effect = UIBlurEffect(style: .dark)
         
@@ -68,12 +72,21 @@ extension ChildTableViewController: UICollectionViewDelegate, UICollectionViewDa
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? ChildCard {
             cell.configure(child: Model.instance.children[indexPath.row])
             cell.layer.masksToBounds = true
-            cell.layer.cornerRadius = cell.frame.width/17.0
+            cell.layer.cornerRadius = cell.frame.width/10.0
             return cell
         } else {
             return UICollectionViewCell()
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "ChildrenScreen", bundle: nil)
+        let vc: ChildrenViewController = storyboard.instantiateViewController(identifier: "children") as ChildrenViewController
+        let navigationController = UINavigationController(rootViewController: vc)
+        navigationController.modalPresentationStyle = .fullScreen
+        self.show(navigationController, sender: self)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
