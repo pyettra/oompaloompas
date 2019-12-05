@@ -12,10 +12,11 @@ import UIKit
 class Child {
     var name: String
     var image: UIImage
+    var letters: [Letters]
     
-    init(name: String, image: String) {
+    init(name: String, image: UIImage) {
         self.name = name
-        self.image = UIImage(named: image)!
+        self.image = image
     }
     
 }

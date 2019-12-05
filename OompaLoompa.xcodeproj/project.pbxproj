@@ -19,6 +19,7 @@
 		6C1147BC238EA585008821AE /* ChildCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C1147BA238EA585008821AE /* ChildCard.xib */; };
 		6C1147C023900674008821AE /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1147BF23900674008821AE /* ModalViewController.swift */; };
 		6C22D3DF23913EFA00C63939 /* RespondidasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C22D3DE23913EFA00C63939 /* RespondidasCell.swift */; };
+		6C25F7BB2395319500F466EC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25F7BA2395319500F466EC /* ImagePicker.swift */; };
 		6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390D2385849D0078B8CB /* AppDelegate.swift */; };
 		6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE390F2385849D0078B8CB /* SceneDelegate.swift */; };
 		6CCE39122385849D0078B8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39112385849D0078B8CB /* ViewController.swift */; };
@@ -34,9 +35,9 @@
 		6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3934238821A40078B8CB /* SendMailViewController.swift */; };
 		6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */; };
 		6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */; };
-		CD1384D9239551ED009B28A8 /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1384D8239551ED009B28A8 /* Animation.storyboard */; };
-		CD1384DB23955213009B28A8 /* FoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1384DA23955213009B28A8 /* FoldViewController.swift */; };
-		CD1384DD2395C099009B28A8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1384DC2395C099009B28A8 /* GameScene.swift */; };
+		6CD20DE523992CF300CE4175 /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DE423992CF300CE4175 /* Letters.swift */; };
+		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
+		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
 		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
 		CDC581912397F66B000E3FB0 /* Christmas music 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818E2397F66A000E3FB0 /* Christmas music 1.wav */; };
 		CDC581922397F66B000E3FB0 /* Christmas music 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818F2397F66A000E3FB0 /* Christmas music 2.wav */; };
@@ -67,6 +68,7 @@
 		6C1147BA238EA585008821AE /* ChildCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChildCard.xib; sourceTree = "<group>"; };
 		6C1147BF23900674008821AE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = OompaLoompa/View/ModalViewController.swift; sourceTree = SOURCE_ROOT; };
 		6C22D3DE23913EFA00C63939 /* RespondidasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondidasCell.swift; sourceTree = "<group>"; };
+		6C25F7BA2395319500F466EC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		6CCE390A2385849D0078B8CB /* OompaLoompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OompaLoompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE390D2385849D0078B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE390F2385849D0078B8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,9 +86,9 @@
 		6CCE3934238821A40078B8CB /* SendMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailViewController.swift; sourceTree = "<group>"; };
 		6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentConfiguration.storyboard; sourceTree = "<group>"; };
 		6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConfigurationViewController.swift; sourceTree = "<group>"; };
-		CD1384D8239551ED009B28A8 /* Animation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
-		CD1384DA23955213009B28A8 /* FoldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldViewController.swift; sourceTree = "<group>"; };
-		CD1384DC2395C099009B28A8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6CD20DE423992CF300CE4175 /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Letters.swift; path = OompaLoompa/Controller/Letters.swift; sourceTree = SOURCE_ROOT; };
+		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
+		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
 		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
 		CDC5818E2397F66A000E3FB0 /* Christmas music 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Christmas music 1.wav"; sourceTree = "<group>"; };
 		CDC5818F2397F66A000E3FB0 /* Christmas music 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Christmas music 2.wav"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				6C1147B3238D4C32008821AE /* Child.swift */,
 				6C1147B7238D530C008821AE /* Model.swift */,
+				6CD20DE423992CF300CE4175 /* Letters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				6CCE39132385849D0078B8CB /* Main.storyboard */,
+				6CCE3916238584A10078B8CB /* Assets.xcassets */,
 				6C1147B9238EA585008821AE /* ChildCard.swift */,
 				6C1147BA238EA585008821AE /* ChildCard.xib */,
 				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
@@ -174,7 +178,8 @@
 				6CCE392E238820C80078B8CB /* SendMail.storyboard */,
 				6CCE3930238820F00078B8CB /* ReceiveMail.storyboard */,
 				6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */,
-				CD1384D8239551ED009B28A8 /* Animation.storyboard */,
+				6C25F7BA2395319500F466EC /* ImagePicker.swift */,
+				6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,8 +202,7 @@
 				429ADD012391556D009A4B53 /* OnboardCollectionViewCell3.swift */,
 				429ADD0323915580009A4B53 /* OnboardCollectionViewCell4.swift */,
 				429ADD0523915591009A4B53 /* OnboardCollectionViewCell5.swift */,
-				CD1384DA23955213009B28A8 /* FoldViewController.swift */,
-				CD1384DC2395C099009B28A8 /* GameScene.swift */,
+				6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +317,7 @@
 				6CCE3917238584A10078B8CB /* Assets.xcassets in Resources */,
 				CDC581A82397F95C000E3FB0 /* Correio 2.wav in Resources */,
 				6CCE39152385849D0078B8CB /* Main.storyboard in Resources */,
+				6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */,
 				6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */,
 				6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */,
 				CDC581A12397F95C000E3FB0 /* Papel dobrando 2.wav in Resources */,
@@ -335,11 +340,11 @@
 				6CCE39332388213F0078B8CB /* ReceiveMailViewController.swift in Sources */,
 				429ADD002391555D009A4B53 /* OnboardCollectionViewCell2.swift in Sources */,
 				429ADD022391556D009A4B53 /* OnboardCollectionViewCell3.swift in Sources */,
-				CD1384DB23955213009B28A8 /* FoldViewController.swift in Sources */,
+				6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */,
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
 				429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
-				CD1384DD2395C099009B28A8 /* GameScene.swift in Sources */,
+				6CD20DE523992CF300CE4175 /* Letters.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
@@ -349,6 +354,7 @@
 				6C1147BB238EA585008821AE /* ChildCard.swift in Sources */,
 				6C1147B8238D530C008821AE /* Model.swift in Sources */,
 				6C1147B4238D4C32008821AE /* Child.swift in Sources */,
+				6C25F7BB2395319500F466EC /* ImagePicker.swift in Sources */,
 				CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */,
 				6CCE39102385849D0078B8CB /* SceneDelegate.swift in Sources */,
 			);
