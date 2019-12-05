@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="35k-8q-VMr">
     <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -14,10 +14,40 @@
                     <view key="view" contentMode="scaleToFill" id="L7w-8f-3q9">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKm-Q2-Y7P">
+                                <rect key="frame" x="486" y="579" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="elfo falando"/>
+                                <connections>
+                                    <action selector="elfTalking:" destination="o3v-p5-ZCN" eventType="touchUpInside" id="fcP-6J-Qen"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPU-rm-lBn">
+                                <rect key="frame" x="213" y="464" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="manda audio"/>
+                                <connections>
+                                    <action selector="sendAudio:" destination="o3v-p5-ZCN" eventType="touchUpInside" id="qsj-CM-wgT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7l2-CX-w7k">
+                                <rect key="frame" x="654" y="464" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="manda desenho"/>
+                                <connections>
+                                    <action selector="sendDrawing:" destination="o3v-p5-ZCN" eventType="touchUpInside" id="fC4-hU-fLq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Gzo-QQ-nt1"/>
                     </view>
-                    <navigationItem key="navigationItem" id="shP-ES-wOi"/>
+                    <navigationItem key="navigationItem" id="shP-ES-wOi">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="hZ7-wB-hyt"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="gear" catalog="system" id="mSs-Q9-ZqG"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1KF-zr-hz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +79,14 @@
             </objects>
             <point key="canvasLocation" x="1048" y="-311"/>
         </scene>
+        <!--sendDrawing-->
+        <scene sceneID="Kgr-8Q-xEM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="sendDrawing" storyboardName="SendDrawing" referencedIdentifier="sendDrawing" id="hYi-EC-uCJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXR-uz-yal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="-217"/>
+        </scene>
         <!--sendMail-->
         <scene sceneID="9Bg-S7-4zc">
             <objects>
@@ -66,4 +104,8 @@
             <point key="canvasLocation" x="1048" y="-43"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
+    </resources>
 </document>
