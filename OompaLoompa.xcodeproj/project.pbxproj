@@ -35,6 +35,7 @@
 		6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE3934238821A40078B8CB /* SendMailViewController.swift */; };
 		6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */; };
 		6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */; };
+		6CD20DE523992CF300CE4175 /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DE423992CF300CE4175 /* Letters.swift */; };
 		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
 		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
 		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
@@ -72,6 +73,7 @@
 		6CCE3934238821A40078B8CB /* SendMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMailViewController.swift; sourceTree = "<group>"; };
 		6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentConfiguration.storyboard; sourceTree = "<group>"; };
 		6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConfigurationViewController.swift; sourceTree = "<group>"; };
+		6CD20DE423992CF300CE4175 /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Letters.swift; path = OompaLoompa/Controller/Letters.swift; sourceTree = SOURCE_ROOT; };
 		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
 		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
 		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				6C1147B3238D4C32008821AE /* Child.swift */,
 				6C1147B7238D530C008821AE /* Model.swift */,
+				6CD20DE423992CF300CE4175 /* Letters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
 				429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
+				6CD20DE523992CF300CE4175 /* Letters.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
