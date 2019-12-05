@@ -52,6 +52,9 @@
 		CDC581A62397F95C000E3FB0 /* Correio 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819C2397F95C000E3FB0 /* Correio 4.wav */; };
 		CDC581A72397F95C000E3FB0 /* Plim.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819D2397F95C000E3FB0 /* Plim.wav */; };
 		CDC581A82397F95C000E3FB0 /* Correio 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819E2397F95C000E3FB0 /* Correio 2.wav */; };
+		CDE958E12399345500118A5F /* Animation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE958E02399345500118A5F /* Animation.storyboard */; };
+		CDE958E42399346B00118A5F /* FoldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE958E22399346B00118A5F /* FoldViewController.swift */; };
+		CDE958E52399346B00118A5F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE958E32399346B00118A5F /* GameScene.swift */; };
 		EF868275995DB0E7C8396837 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
@@ -103,6 +106,9 @@
 		CDC5819C2397F95C000E3FB0 /* Correio 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 4.wav"; sourceTree = "<group>"; };
 		CDC5819D2397F95C000E3FB0 /* Plim.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Plim.wav; sourceTree = "<group>"; };
 		CDC5819E2397F95C000E3FB0 /* Correio 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 2.wav"; sourceTree = "<group>"; };
+		CDE958E02399345500118A5F /* Animation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Animation.storyboard; sourceTree = "<group>"; };
+		CDE958E22399346B00118A5F /* FoldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldViewController.swift; sourceTree = "<group>"; };
+		CDE958E32399346B00118A5F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,12 +174,12 @@
 			isa = PBXGroup;
 			children = (
 				6CCE39132385849D0078B8CB /* Main.storyboard */,
-				6CCE3916238584A10078B8CB /* Assets.xcassets */,
 				6C1147B9238EA585008821AE /* ChildCard.swift */,
 				6C1147BA238EA585008821AE /* ChildCard.xib */,
 				6CCE3918238584A10078B8CB /* LaunchScreen.storyboard */,
 				6C22D3DE23913EFA00C63939 /* RespondidasCell.swift */,
 				6CCE39242388197E0078B8CB /* Login.storyboard */,
+				CDE958E02399345500118A5F /* Animation.storyboard */,
 				6CCE392A23881F290078B8CB /* ChildrenScreen.storyboard */,
 				6CCE392E238820C80078B8CB /* SendMail.storyboard */,
 				6CCE3930238820F00078B8CB /* ReceiveMail.storyboard */,
@@ -200,6 +206,8 @@
 				429ADCFD2391554B009A4B53 /* OnboardCollectionViewCell1.swift */,
 				429ADCFF2391555D009A4B53 /* OnboardCollectionViewCell2.swift */,
 				429ADD012391556D009A4B53 /* OnboardCollectionViewCell3.swift */,
+				CDE958E22399346B00118A5F /* FoldViewController.swift */,
+				CDE958E32399346B00118A5F /* GameScene.swift */,
 				429ADD0323915580009A4B53 /* OnboardCollectionViewCell4.swift */,
 				429ADD0523915591009A4B53 /* OnboardCollectionViewCell5.swift */,
 				6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */,
@@ -304,6 +312,7 @@
 				CDC581A32397F95C000E3FB0 /* Papel dobrando 1.wav in Resources */,
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
 				CDC581912397F66B000E3FB0 /* Christmas music 1.wav in Resources */,
+				CDE958E12399345500118A5F /* Animation.storyboard in Resources */,
 				CDC581922397F66B000E3FB0 /* Christmas music 2.wav in Resources */,
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
@@ -322,7 +331,6 @@
 				6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */,
 				CDC581A12397F95C000E3FB0 /* Papel dobrando 2.wav in Resources */,
 				CDC5819F2397F95C000E3FB0 /* Sino 1.wav in Resources */,
-				CD1384D9239551ED009B28A8 /* Animation.storyboard in Resources */,
 				CDC581A72397F95C000E3FB0 /* Plim.wav in Resources */,
 				CDC581A22397F95C000E3FB0 /* Sino 2.wav in Resources */,
 			);
@@ -352,6 +360,8 @@
 				429ADD0623915591009A4B53 /* OnboardCollectionViewCell5.swift in Sources */,
 				6C1147B2238D47A7008821AE /* ChildTableViewController.swift in Sources */,
 				6C1147BB238EA585008821AE /* ChildCard.swift in Sources */,
+				CDE958E42399346B00118A5F /* FoldViewController.swift in Sources */,
+				CDE958E52399346B00118A5F /* GameScene.swift in Sources */,
 				6C1147B8238D530C008821AE /* Model.swift in Sources */,
 				6C1147B4238D4C32008821AE /* Child.swift in Sources */,
 				6C25F7BB2395319500F466EC /* ImagePicker.swift in Sources */,
