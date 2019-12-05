@@ -14,10 +14,8 @@ class Model {
     
     private init(){}
     
-    var children: [Child] = [
-        Child(name: "Aurora", image: "moana.jpg"),
-        Child(name: "Elsa", image: "elsa.jpg"),
-        Child(name: "Anna", image: "anna.jpg")
-    ]
-    
+    var children: [Child] = []
+
 }
+
+
