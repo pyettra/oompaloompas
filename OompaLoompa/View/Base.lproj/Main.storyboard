@@ -42,15 +42,6 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moana" translatesAutoresizingMaskIntoConstraints="NO" id="xvx-PX-gNd">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1001.5"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsg-R3-LQ7">
-                                                    <rect key="frame" x="403" y="568" width="169" height="133"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.89019607840000003" green="0.52941176469999995" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <state key="normal" title="Animate"/>
-                                                    <connections>
-                                                        <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jf3-jP-xmJ"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="xvx-PX-gNd" firstAttribute="width" secondItem="aTW-8k-Byp" secondAttribute="width" id="59L-TS-dxK"/>
