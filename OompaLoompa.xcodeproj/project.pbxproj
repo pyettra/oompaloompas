@@ -39,16 +39,19 @@
 		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
 		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
 		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
-		CDC581912397F66B000E3FB0 /* Christmas music 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818E2397F66A000E3FB0 /* Christmas music 1.wav */; };
-		CDC581922397F66B000E3FB0 /* Christmas music 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818F2397F66A000E3FB0 /* Christmas music 2.wav */; };
-		CDC581932397F66B000E3FB0 /* Christmas music 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581902397F66B000E3FB0 /* Christmas music 3.wav */; };
+		CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */; };
+		CDC20701239944D400A9B6A4 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20700239944D400A9B6A4 /* Music.swift */; };
+		CDC20703239945B800A9B6A4 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20702239945B800A9B6A4 /* MusicPlayer.swift */; };
+		CDC581912397F66B000E3FB0 /* musica1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818E2397F66A000E3FB0 /* musica1.wav */; };
+		CDC581922397F66B000E3FB0 /* musica2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5818F2397F66A000E3FB0 /* musica2.wav */; };
+		CDC581932397F66B000E3FB0 /* musica3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581902397F66B000E3FB0 /* musica3.wav */; };
 		CDC5819F2397F95C000E3FB0 /* Sino 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581952397F95B000E3FB0 /* Sino 1.wav */; };
 		CDC581A02397F95C000E3FB0 /* Correio 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581962397F95B000E3FB0 /* Correio 3.wav */; };
-		CDC581A12397F95C000E3FB0 /* Papel dobrando 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581972397F95B000E3FB0 /* Papel dobrando 2.wav */; };
+		CDC581A12397F95C000E3FB0 /* dobra2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581972397F95B000E3FB0 /* dobra2.wav */; };
 		CDC581A22397F95C000E3FB0 /* Sino 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581982397F95C000E3FB0 /* Sino 2.wav */; };
-		CDC581A32397F95C000E3FB0 /* Papel dobrando 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581992397F95C000E3FB0 /* Papel dobrando 1.wav */; };
+		CDC581A32397F95C000E3FB0 /* dobra1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC581992397F95C000E3FB0 /* dobra1.wav */; };
 		CDC581A42397F95C000E3FB0 /* Correio 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819A2397F95C000E3FB0 /* Correio 1.wav */; };
-		CDC581A52397F95C000E3FB0 /* Papel dobrando 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819B2397F95C000E3FB0 /* Papel dobrando 3.wav */; };
+		CDC581A52397F95C000E3FB0 /* dobra3.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819B2397F95C000E3FB0 /* dobra3.wav */; };
 		CDC581A62397F95C000E3FB0 /* Correio 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819C2397F95C000E3FB0 /* Correio 4.wav */; };
 		CDC581A72397F95C000E3FB0 /* Plim.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819D2397F95C000E3FB0 /* Plim.wav */; };
 		CDC581A82397F95C000E3FB0 /* Correio 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDC5819E2397F95C000E3FB0 /* Correio 2.wav */; };
@@ -93,16 +96,19 @@
 		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
 		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
 		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
-		CDC5818E2397F66A000E3FB0 /* Christmas music 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Christmas music 1.wav"; sourceTree = "<group>"; };
-		CDC5818F2397F66A000E3FB0 /* Christmas music 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Christmas music 2.wav"; sourceTree = "<group>"; };
-		CDC581902397F66B000E3FB0 /* Christmas music 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Christmas music 3.wav"; sourceTree = "<group>"; };
+		CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAudioPlayer.swift; path = OompaLoompa/CustomAudioPlayer.swift; sourceTree = SOURCE_ROOT; };
+		CDC20700239944D400A9B6A4 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Music.swift; path = OompaLoompa/Music.swift; sourceTree = SOURCE_ROOT; };
+		CDC20702239945B800A9B6A4 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MusicPlayer.swift; path = OompaLoompa/MusicPlayer.swift; sourceTree = SOURCE_ROOT; };
+		CDC5818E2397F66A000E3FB0 /* musica1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = musica1.wav; sourceTree = "<group>"; };
+		CDC5818F2397F66A000E3FB0 /* musica2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = musica2.wav; sourceTree = "<group>"; };
+		CDC581902397F66B000E3FB0 /* musica3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = musica3.wav; sourceTree = "<group>"; };
 		CDC581952397F95B000E3FB0 /* Sino 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Sino 1.wav"; sourceTree = "<group>"; };
 		CDC581962397F95B000E3FB0 /* Correio 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 3.wav"; sourceTree = "<group>"; };
-		CDC581972397F95B000E3FB0 /* Papel dobrando 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Papel dobrando 2.wav"; sourceTree = "<group>"; };
+		CDC581972397F95B000E3FB0 /* dobra2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dobra2.wav; sourceTree = "<group>"; };
 		CDC581982397F95C000E3FB0 /* Sino 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Sino 2.wav"; sourceTree = "<group>"; };
-		CDC581992397F95C000E3FB0 /* Papel dobrando 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Papel dobrando 1.wav"; sourceTree = "<group>"; };
+		CDC581992397F95C000E3FB0 /* dobra1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dobra1.wav; sourceTree = "<group>"; };
 		CDC5819A2397F95C000E3FB0 /* Correio 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 1.wav"; sourceTree = "<group>"; };
-		CDC5819B2397F95C000E3FB0 /* Papel dobrando 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Papel dobrando 3.wav"; sourceTree = "<group>"; };
+		CDC5819B2397F95C000E3FB0 /* dobra3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dobra3.wav; sourceTree = "<group>"; };
 		CDC5819C2397F95C000E3FB0 /* Correio 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 4.wav"; sourceTree = "<group>"; };
 		CDC5819D2397F95C000E3FB0 /* Plim.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Plim.wav; sourceTree = "<group>"; };
 		CDC5819E2397F95C000E3FB0 /* Correio 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Correio 2.wav"; sourceTree = "<group>"; };
@@ -166,6 +172,9 @@
 				6C1147B3238D4C32008821AE /* Child.swift */,
 				6C1147B7238D530C008821AE /* Model.swift */,
 				6CD20DE423992CF300CE4175 /* Letters.swift */,
+				CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */,
+				CDC20700239944D400A9B6A4 /* Music.swift */,
+				CDC20702239945B800A9B6A4 /* MusicPlayer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,9 +236,9 @@
 		CDC5818D2397F63D000E3FB0 /* Music */ = {
 			isa = PBXGroup;
 			children = (
-				CDC5818E2397F66A000E3FB0 /* Christmas music 1.wav */,
-				CDC5818F2397F66A000E3FB0 /* Christmas music 2.wav */,
-				CDC581902397F66B000E3FB0 /* Christmas music 3.wav */,
+				CDC5818E2397F66A000E3FB0 /* musica1.wav */,
+				CDC5818F2397F66A000E3FB0 /* musica2.wav */,
+				CDC581902397F66B000E3FB0 /* musica3.wav */,
 			);
 			path = Music;
 			sourceTree = "<group>";
@@ -241,9 +250,9 @@
 				CDC5819E2397F95C000E3FB0 /* Correio 2.wav */,
 				CDC581962397F95B000E3FB0 /* Correio 3.wav */,
 				CDC5819C2397F95C000E3FB0 /* Correio 4.wav */,
-				CDC581992397F95C000E3FB0 /* Papel dobrando 1.wav */,
-				CDC581972397F95B000E3FB0 /* Papel dobrando 2.wav */,
-				CDC5819B2397F95C000E3FB0 /* Papel dobrando 3.wav */,
+				CDC581992397F95C000E3FB0 /* dobra1.wav */,
+				CDC581972397F95B000E3FB0 /* dobra2.wav */,
+				CDC5819B2397F95C000E3FB0 /* dobra3.wav */,
 				CDC5819D2397F95C000E3FB0 /* Plim.wav */,
 				CDC581952397F95B000E3FB0 /* Sino 1.wav */,
 				CDC581982397F95C000E3FB0 /* Sino 2.wav */,
@@ -309,18 +318,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC581A32397F95C000E3FB0 /* Papel dobrando 1.wav in Resources */,
+				CDC581A32397F95C000E3FB0 /* dobra1.wav in Resources */,
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
-				CDC581912397F66B000E3FB0 /* Christmas music 1.wav in Resources */,
+				CDC581912397F66B000E3FB0 /* musica1.wav in Resources */,
 				CDE958E12399345500118A5F /* Animation.storyboard in Resources */,
-				CDC581922397F66B000E3FB0 /* Christmas music 2.wav in Resources */,
+				CDC581922397F66B000E3FB0 /* musica2.wav in Resources */,
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
-				CDC581A52397F95C000E3FB0 /* Papel dobrando 3.wav in Resources */,
+				CDC581A52397F95C000E3FB0 /* dobra3.wav in Resources */,
 				CDC581A62397F95C000E3FB0 /* Correio 4.wav in Resources */,
 				CDC581A42397F95C000E3FB0 /* Correio 1.wav in Resources */,
 				6CCE391A238584A10078B8CB /* LaunchScreen.storyboard in Resources */,
-				CDC581932397F66B000E3FB0 /* Christmas music 3.wav in Resources */,
+				CDC581932397F66B000E3FB0 /* musica3.wav in Resources */,
 				CDC581A02397F95C000E3FB0 /* Correio 3.wav in Resources */,
 				6C1147BC238EA585008821AE /* ChildCard.xib in Resources */,
 				6CCE3917238584A10078B8CB /* Assets.xcassets in Resources */,
@@ -329,7 +338,7 @@
 				6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */,
 				6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */,
 				6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */,
-				CDC581A12397F95C000E3FB0 /* Papel dobrando 2.wav in Resources */,
+				CDC581A12397F95C000E3FB0 /* dobra2.wav in Resources */,
 				CDC5819F2397F95C000E3FB0 /* Sino 1.wav in Resources */,
 				CDC581A72397F95C000E3FB0 /* Plim.wav in Resources */,
 				CDC581A22397F95C000E3FB0 /* Sino 2.wav in Resources */,
@@ -344,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				429ADD0423915580009A4B53 /* OnboardCollectionViewCell4.swift in Sources */,
+				CDC20701239944D400A9B6A4 /* Music.swift in Sources */,
 				6C22D3DF23913EFA00C63939 /* RespondidasCell.swift in Sources */,
 				6CCE39332388213F0078B8CB /* ReceiveMailViewController.swift in Sources */,
 				429ADD002391555D009A4B53 /* OnboardCollectionViewCell2.swift in Sources */,
@@ -353,6 +363,7 @@
 				429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
 				6CD20DE523992CF300CE4175 /* Letters.swift in Sources */,
+				CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
@@ -361,6 +372,7 @@
 				6C1147B2238D47A7008821AE /* ChildTableViewController.swift in Sources */,
 				6C1147BB238EA585008821AE /* ChildCard.swift in Sources */,
 				CDE958E42399346B00118A5F /* FoldViewController.swift in Sources */,
+				CDC20703239945B800A9B6A4 /* MusicPlayer.swift in Sources */,
 				CDE958E52399346B00118A5F /* GameScene.swift in Sources */,
 				6C1147B8238D530C008821AE /* Model.swift in Sources */,
 				6C1147B4238D4C32008821AE /* Child.swift in Sources */,
@@ -511,7 +523,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = ADP5XER6GT;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -529,7 +541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = ADP5XER6GT;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

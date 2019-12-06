@@ -50,11 +50,22 @@ class GameScene: SKScene {
                              timePerFrame: 0.6,
                              resize: false,
                              restore: false))
+//            var sfxFold1 = CustomAudioPlayer(fileName: "dobra1.wav")
+//            sfxFold1.play()
+            let sound = selectSound()
+            let sfxFold = SKAction.playSoundFileNamed(sound, waitForCompletion: false)
+            run(sfxFold)
+            print("tocou o som")
             animateStep += 1
-            //tocar o som de dobra de papel ***
         } else {
             print("acabou a dobradura")
         }
+    }
+    
+    
+    func selectSound() -> String {
+        var sounds = ["dobra1.wav", "dobra2.wav", "dobra3.wav"]
+        return sounds.randomElement()!
     }
 }
 

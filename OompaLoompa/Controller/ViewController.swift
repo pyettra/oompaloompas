@@ -53,6 +53,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         
     }
+    @IBAction func animate(_ sender: Any) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Animation", bundle: nil)
+        var vc = storyboard.instantiateViewController(identifier: "animation") as FoldViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.show(vc, sender: self)
+    }
     
     @IBAction func nextOnboardAction(_ sender: Any) {
         
