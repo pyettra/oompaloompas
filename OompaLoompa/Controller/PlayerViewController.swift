@@ -1,22 +1,78 @@
 //
 //  PlayerViewController.swift
-//  OompaLoompa
+//  testDraw
 //
-//  Created by Lucas Ronnau on 08/12/19.
-//  Copyright © 2019 Pyettra Ferreira. All rights reserved.
+//  Created by Lucas Ronnau on 06/12/19.
+//  Copyright © 2019 Lucas Ronnau. All rights reserved.
 //
 
 import UIKit
+import AVFoundation
 
 class PlayerViewController: UIViewController {
+    
+    var recordingSession: AVAudioSession!
+    var audioRecorder: AVAudioRecorder!
+    var audioPlayer: AVAudioPlayer!
+    var audioFileName: URL!
+    
+    var model = Model.instance
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        recordingSession = AVAudioSession.sharedInstance()
+        
+        AVAudioSession.sharedInstance().requestRecordPermission { (hasPermission) in
+            if hasPermission{
+                print("ACCEPTED")
+            }
+        }
+        
+        do {
+            try recordingSession.setCategory(.playAndRecord, mode: .default)
+            try recordingSession.setActive(true)
+        } catch {
+            // failed to record!
+        }
     }
     
-
+    @IBAction func playAudio(_ sender: Any) {
+        
+        let path = model.getDirectory().appendingPathComponent("teste.m4a")
+        
+        print("path: \(path)")
+        
+        do {
+            try recordingSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
+        } catch let error as NSError {
+            print("audioSession error: \(error.localizedDescription)")
+        }
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: path)
+            audioPlayer.volume = 1.0
+            audioPlayer.play()
+        } catch {
+            print("arquivo não encontrado")
+        }
+        
+        
+    }
+    
+    @IBAction func pauseAudio(_ sender: Any) {
+        
+        do {
+            audioPlayer.pause()
+        } catch {
+            print("arquivo não encontrado")
+        }
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 
