@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D45087239D612D00CBA933 /* audioRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D45086239D612D00CBA933 /* audioRecord.storyboard */; };
+		34D45089239D62BB00CBA933 /* audioRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D45088239D62BB00CBA933 /* audioRecordViewController.swift */; };
 		429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429ADCFD2391554B009A4B53 /* OnboardCollectionViewCell1.swift */; };
 		429ADD002391555D009A4B53 /* OnboardCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429ADCFF2391555D009A4B53 /* OnboardCollectionViewCell2.swift */; };
 		429ADD022391556D009A4B53 /* OnboardCollectionViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429ADD012391556D009A4B53 /* OnboardCollectionViewCell3.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34D45086239D612D00CBA933 /* audioRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = audioRecord.storyboard; sourceTree = "<group>"; };
+		34D45088239D62BB00CBA933 /* audioRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioRecordViewController.swift; sourceTree = "<group>"; };
 		429ADCFD2391554B009A4B53 /* OnboardCollectionViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCollectionViewCell1.swift; sourceTree = "<group>"; };
 		429ADCFF2391555D009A4B53 /* OnboardCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCollectionViewCell2.swift; sourceTree = "<group>"; };
 		429ADD012391556D009A4B53 /* OnboardCollectionViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCollectionViewCell3.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */,
 				6C25F7BA2395319500F466EC /* ImagePicker.swift */,
 				6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */,
+				34D45086239D612D00CBA933 /* audioRecord.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				429ADD0323915580009A4B53 /* OnboardCollectionViewCell4.swift */,
 				429ADD0523915591009A4B53 /* OnboardCollectionViewCell5.swift */,
 				6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */,
+				34D45088239D62BB00CBA933 /* audioRecordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D45087239D612D00CBA933 /* audioRecord.storyboard in Resources */,
 				CDC581A32397F95C000E3FB0 /* dobra1.wav in Resources */,
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
 				CDC581912397F66B000E3FB0 /* musica1.wav in Resources */,
@@ -366,6 +373,7 @@
 				CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
+				34D45089239D62BB00CBA933 /* audioRecordViewController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
 				6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */,
 				429ADD0623915591009A4B53 /* OnboardCollectionViewCell5.swift in Sources */,
