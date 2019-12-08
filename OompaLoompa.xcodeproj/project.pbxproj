@@ -40,6 +40,12 @@
 		6CD20DE523992CF300CE4175 /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DE423992CF300CE4175 /* Letters.swift */; };
 		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
 		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
+		CD62EAD9239D8963009E3907 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */; };
+		CD62EADA239D8963009E3907 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAC8239D8961009E3907 /* Poppins-Regular.ttf */; };
+		CD62EAE0239D8963009E3907 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EACE239D8962009E3907 /* Poppins-Bold.ttf */; };
+		CD62EAE2239D8963009E3907 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD0239D8962009E3907 /* Poppins-Medium.ttf */; };
+		CD62EAE7239D8963009E3907 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD5239D8962009E3907 /* Poppins-Light.ttf */; };
+		CD62EAE8239D8963009E3907 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD6239D8963009E3907 /* Poppins-SemiBold.ttf */; };
 		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
 		CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */; };
 		CDC20701239944D400A9B6A4 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20700239944D400A9B6A4 /* Music.swift */; };
@@ -99,6 +105,12 @@
 		6CD20DE423992CF300CE4175 /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Letters.swift; path = OompaLoompa/Controller/Letters.swift; sourceTree = SOURCE_ROOT; };
 		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
 		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
+		CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		CD62EAC8239D8961009E3907 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		CD62EACE239D8962009E3907 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CD62EAD0239D8962009E3907 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		CD62EAD5239D8962009E3907 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		CD62EAD6239D8963009E3907 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
 		CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAudioPlayer.swift; path = OompaLoompa/CustomAudioPlayer.swift; sourceTree = SOURCE_ROOT; };
 		CDC20700239944D400A9B6A4 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Music.swift; path = OompaLoompa/Music.swift; sourceTree = SOURCE_ROOT; };
@@ -160,6 +172,7 @@
 		6CCE390C2385849D0078B8CB /* OompaLoompa */ = {
 			isa = PBXGroup;
 			children = (
+				CD62EAC5239D88DD009E3907 /* Fonts */,
 				6CCE3916238584A10078B8CB /* Assets.xcassets */,
 				CDC5818C2397F5A0000E3FB0 /* Sound Assets */,
 				6CCE3923238584F10078B8CB /* Controller */,
@@ -228,6 +241,27 @@
 				34D45088239D62BB00CBA933 /* audioRecordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD62EAC5239D88DD009E3907 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD62EAC6239D894F009E3907 /* Poppins */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CD62EAC6239D894F009E3907 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				CD62EACE239D8962009E3907 /* Poppins-Bold.ttf */,
+				CD62EAD5239D8962009E3907 /* Poppins-Light.ttf */,
+				CD62EAD0239D8962009E3907 /* Poppins-Medium.ttf */,
+				CD62EAC8239D8961009E3907 /* Poppins-Regular.ttf */,
+				CD62EAD6239D8963009E3907 /* Poppins-SemiBold.ttf */,
+				CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */,
+			);
+			path = Poppins;
 			sourceTree = "<group>";
 		};
 		CDC5818C2397F5A0000E3FB0 /* Sound Assets */ = {
@@ -327,9 +361,13 @@
 				34D45087239D612D00CBA933 /* audioRecord.storyboard in Resources */,
 				CDC581A32397F95C000E3FB0 /* dobra1.wav in Resources */,
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
+				CD62EADA239D8963009E3907 /* Poppins-Regular.ttf in Resources */,
+				CD62EAD9239D8963009E3907 /* Poppins-Thin.ttf in Resources */,
 				CDC581912397F66B000E3FB0 /* musica1.wav in Resources */,
 				CDE958E12399345500118A5F /* Animation.storyboard in Resources */,
+				CD62EAE0239D8963009E3907 /* Poppins-Bold.ttf in Resources */,
 				CDC581922397F66B000E3FB0 /* musica2.wav in Resources */,
+				CD62EAE7239D8963009E3907 /* Poppins-Light.ttf in Resources */,
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
 				CDC581A52397F95C000E3FB0 /* dobra3.wav in Resources */,
@@ -344,6 +382,8 @@
 				6CCE39152385849D0078B8CB /* Main.storyboard in Resources */,
 				6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */,
 				6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */,
+				CD62EAE2239D8963009E3907 /* Poppins-Medium.ttf in Resources */,
+				CD62EAE8239D8963009E3907 /* Poppins-SemiBold.ttf in Resources */,
 				6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */,
 				CDC581A12397F95C000E3FB0 /* dobra2.wav in Resources */,
 				CDC5819F2397F95C000E3FB0 /* Sino 1.wav in Resources */,
