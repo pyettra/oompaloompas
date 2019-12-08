@@ -12,10 +12,15 @@ import UIKit
 class Model {
     
     static let instance = Model()
+    var selectedChild: Child!
+    var children: [Child] = []
     
     private init(){}
     
-    var children: [Child] = []
+    
+    
+
+    
 
 }
 
