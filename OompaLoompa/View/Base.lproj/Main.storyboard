@@ -7,6 +7,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -33,9 +38,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-wH-5B5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nesse app você vai poder escrever cartas para o papai noel!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdk-wH-5B5">
                                                     <rect key="frame" x="30" y="1021.5" width="740" height="192.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -67,9 +72,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-iN-ygl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As cartas podem ser desenhos ou áudio." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfX-iN-ygl">
                                                     <rect key="frame" x="30" y="1021.5" width="740" height="192.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -101,9 +106,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-F3-WWN">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Papai noel vai precisar de algumas informações dos seus parentes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27k-F3-WWN">
                                                     <rect key="frame" x="30" y="1021.5" width="740" height="192.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -131,17 +136,17 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OBCollectionCell4" id="8UM-RL-O8W" userLabel="OB4" customClass="OnboardCollectionViewCell4" customModule="OompaLoompa" customModuleProvider="target">
                                         <rect key="frame" x="2430" y="31" width="800" height="1284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="g9J-gV-tKo" userLabel="Onboard 1">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="g9J-gV-tKo" userLabel="Onboard 1">
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-4S-FYM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depois de um tempo, você vai receber a resposta." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPd-4S-FYM">
                                                     <rect key="frame" x="30" y="1021.5" width="740" height="192.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="moana" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-dg-0cj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moana" translatesAutoresizingMaskIntoConstraints="NO" id="CAX-dg-0cj">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1001.5"/>
                                                 </imageView>
                                             </subviews>
@@ -165,23 +170,23 @@
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OBCollectionCell5" id="TV9-xk-i2q" userLabel="OB5" customClass="OnboardCollectionViewCell5" customModule="OompaLoompa" customModuleProvider="target">
                                         <rect key="frame" x="3240" y="31" width="800" height="1284"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="jcm-vc-ASz" userLabel="Onboard 1">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jcm-vc-ASz" userLabel="Onboard 1">
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="1284"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pipipi popopo qeqeqe nhonhonho vivivi zezeze tatata tititi vavava veveve" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q73-uY-G5n">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você pode mandar quantas cartas quiser!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q73-uY-G5n">
                                                     <rect key="frame" x="30" y="1021.5" width="740" height="192.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="anna" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-jp-C47">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anna" translatesAutoresizingMaskIntoConstraints="NO" id="xcU-jp-C47">
                                                     <rect key="frame" x="0.0" y="0.0" width="800" height="1001.5"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-1o-gL9">
-                                                    <rect key="frame" x="601" y="1203" width="149" height="51"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                    <state key="normal" title="Lets q lets!"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKc-1o-gL9">
+                                                    <rect key="frame" x="590" y="1197" width="160" height="57"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="32"/>
+                                                    <state key="normal" title="Vamos lá!"/>
                                                     <connections>
                                                         <action selector="nextOnboardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hsk-Jy-lw4"/>
                                                     </connections>
