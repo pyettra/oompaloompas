@@ -50,6 +50,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         onboardCollection.delegate = self
         onboardCollection.dataSource = self
         // Do any additional setup after loading the view.
+        
+        
+    }
+    @IBAction func animate(_ sender: Any) {
+        var storyboard: UIStoryboard = UIStoryboard(name: "Animation", bundle: nil)
+        var vc = storyboard.instantiateViewController(identifier: "animation") as FoldViewController
+        vc.modalPresentationStyle = .fullScreen
+        self.show(vc, sender: self)
     }
     
     @IBAction func nextOnboardAction(_ sender: Any) {

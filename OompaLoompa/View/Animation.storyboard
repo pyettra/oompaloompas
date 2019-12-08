@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gyc-lO-Wt6">
+    <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fold View Controller-->
+        <scene sceneID="zCc-Z9-cbu">
+            <objects>
+                <viewController storyboardIdentifier="animation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gyc-lO-Wt6" customClass="FoldViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acy-F5-XL1" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-yB-rJq">
+                                <rect key="frame" x="461.5" y="1316" width="101" height="30"/>
+                                <state key="normal" title="Próximo passo"/>
+                                <connections>
+                                    <action selector="proximo:" destination="Gyc-lO-Wt6" eventType="touchUpInside" id="QnG-Y6-raa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ui8-h6-08m" firstAttribute="bottom" secondItem="dsa-yB-rJq" secondAttribute="bottom" constant="20" id="9Rl-7F-szF"/>
+                            <constraint firstItem="dsa-yB-rJq" firstAttribute="centerX" secondItem="Ui8-h6-08m" secondAttribute="centerX" id="wpa-P2-rYo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ui8-h6-08m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFc-Ms-G8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381.4453125" y="128.69692532942898"/>
+        </scene>
+    </scenes>
+</document>
