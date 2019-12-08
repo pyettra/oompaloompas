@@ -1,28 +1,34 @@
 //
-//  audioRecordViewController.swift
-//  OompaLoompa
+//  recordAudioViewController.swift
+//  testDraw
 //
-//  Created by Lucas Ronnau on 08/12/19.
-//  Copyright © 2019 Pyettra Ferreira. All rights reserved.
+//  Created by Lucas Ronnau on 05/12/19.
+//  Copyright © 2019 Lucas Ronnau. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class audioRecordViewController: UIViewController, AVAudioRecorderDelegate {
+class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
 
+    
+    var model = Model.instance
+    
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer!
     var audioFileName: URL!
     
-    @IBOutlet weak var imgRecorderAudio: UIImageView!
     
+    @IBOutlet weak var imgRecorderAudio: UIImageView!
+    @IBOutlet weak var imgPlayAndPause: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         recordingSession = AVAudioSession.sharedInstance()
         // permissão do usuário para usar o microfone
+        
+        model.number = 0
 
         do {
             try recordingSession.setCategory(.playAndRecord, mode: .default)
@@ -34,7 +40,6 @@ class audioRecordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func recordAudio(_ sender: Any) {
-        
         if audioRecorder == nil {
             imgRecorderAudio.tintColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
             startRecording()
@@ -62,14 +67,24 @@ class audioRecordViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
-    @IBAction func sendAudio(_ sender: Any) {
+    @IBAction func deleteAudio(_ sender: Any) {
+        
+        
+        
     }
     
+    @IBAction func sendAudio(_ sender: Any) {
+        
+//        do {
+//            audioFileName.dataRepresentation.write(to: filename)
+//        }
+        
+    }
     
     
     func startRecording() {
         // onde o áudio fica salvo
-        self.audioFileName = getDocumentsDirectory().appendingPathComponent("recording.m4a")
+        audioFileName = model.getDirectory().appendingPathComponent("teste.m4a")
 
         // configurações do áudio
         let settings = [
@@ -109,17 +124,9 @@ class audioRecordViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        
-        //[file:///var/mobile/Containers/Data/Application/700F0F82-41F1-4F1A-B5A2-771001BF9B1B/Documents/]
-
-        print(paths)
-        return paths[0]
-    }
     
     
-
+    
     /*
     // MARK: - Navigation
 

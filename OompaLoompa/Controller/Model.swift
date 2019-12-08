@@ -15,7 +15,25 @@ class Model {
     var selectedChild: Child!
     var children: [Child] = []
     
-    private init(){}
+    private init(){
+        number = UserDefaults.standard.object(forKey: "myNumber") as! Int
+    }
+    
+    
+    
+    var number: Int {
+        didSet{
+            UserDefaults.standard.set(self.number, forKey: "myNumber")
+        }
+    }
+    
+    
+    func getDirectory() -> URL {
+        
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask )
+        let documentDirectory = paths[0]
+        return documentDirectory
+    }
     
     
     

@@ -108,16 +108,83 @@
                 <tapGestureRecognizer id="wHf-LJ-2dQ" userLabel="send">
                     <connections>
                         <action selector="sendAudio:" destination="WDo-pJ-ijw" id="LDH-bG-Xut"/>
+                        <segue destination="r4z-Hb-X3s" kind="show" id="ISM-rP-jp3"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-639" y="114"/>
         </scene>
+        <!--Player View Controller-->
+        <scene sceneID="dos-T1-2f9">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="r4z-Hb-X3s" customClass="PlayerViewController" customModule="testDraw" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tST-OI-vpC">
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-6q-w28">
+                                <rect key="frame" x="0.0" y="352.5" width="712" height="302"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-Pl-H2V">
+                                        <rect key="frame" x="153" y="92" width="121" height="117.5"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Zf9-Ri-doZ" appends="YES" id="jkU-dK-x8b"/>
+                                        </connections>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="pause.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iw4-Bm-VZt">
+                                        <rect key="frame" x="10.5" y="92.5" width="121" height="117"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Wvz-hL-4az" appends="YES" id="AHF-cQ-q1W"/>
+                                        </connections>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9318830199" green="1" blue="0.37007472250000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="width" secondItem="vgn-6q-w28" secondAttribute="width" multiplier="0.17" id="8J9-yO-6wY"/>
+                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="height" secondItem="vgn-6q-w28" secondAttribute="height" multiplier="0.4" id="FZH-oO-l54"/>
+                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="centerX" secondItem="vgn-6q-w28" secondAttribute="centerX" multiplier="0.6" id="ZCS-DC-z7s"/>
+                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="height" secondItem="vgn-6q-w28" secondAttribute="height" multiplier="0.4" id="dxa-9R-XYm"/>
+                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="centerY" secondItem="vgn-6q-w28" secondAttribute="centerY" id="f4d-EQ-eXh"/>
+                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="centerY" secondItem="vgn-6q-w28" secondAttribute="centerY" id="u77-L5-t9h"/>
+                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="width" secondItem="vgn-6q-w28" secondAttribute="width" multiplier="0.17" id="uYj-Kk-52K"/>
+                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="centerX" secondItem="vgn-6q-w28" secondAttribute="centerX" multiplier="0.2" id="xeA-B9-E3d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vgn-6q-w28" firstAttribute="centerX" secondItem="5EB-a0-Rki" secondAttribute="centerX" id="6fr-rQ-mTa"/>
+                            <constraint firstItem="vgn-6q-w28" firstAttribute="centerY" secondItem="5EB-a0-Rki" secondAttribute="centerY" id="EI4-ia-fAU"/>
+                            <constraint firstItem="vgn-6q-w28" firstAttribute="height" secondItem="tST-OI-vpC" secondAttribute="height" multiplier="0.3" id="xHf-fk-6km"/>
+                            <constraint firstItem="vgn-6q-w28" firstAttribute="width" secondItem="tST-OI-vpC" secondAttribute="width" id="xus-Na-LSJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5EB-a0-Rki"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fgu-oD-Rii"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czS-V0-ogk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Zf9-Ri-doZ" userLabel="play">
+                    <connections>
+                        <action selector="playAudio:" destination="r4z-Hb-X3s" id="to5-M4-gie"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Wvz-hL-4az" userLabel="pause">
+                    <connections>
+                        <action selector="pauseAudio:" destination="r4z-Hb-X3s" id="4b4-QX-oW1"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="277" y="114"/>
+        </scene>
     </scenes>
     <resources>
         <image name="largecircle.fill.circle" catalog="system" width="64" height="60"/>
         <image name="paperplane" catalog="system" width="64" height="60"/>
+        <image name="pause.fill" catalog="system" width="58" height="64"/>
         <image name="play.circle" catalog="system" width="64" height="60"/>
+        <image name="play.fill" catalog="system" width="58" height="64"/>
         <image name="trash.fill" catalog="system" width="60" height="64"/>
     </resources>
 </document>
