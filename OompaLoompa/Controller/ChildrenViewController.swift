@@ -22,22 +22,22 @@ class ChildrenViewController: UIViewController {
     }
     
     @IBAction func sendDrawing(_ sender: Any) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "SendDrawing", bundle: nil)
-        let vc: SendDrawingViewController = storyboard.instantiateViewController(identifier: "sendDrawing") as SendDrawingViewController
+//        let storyboard: UIStoryboard = UIStoryboard(name: "SendDrawing", bundle: nil)
+//        let vc: UINavigationController = storyboard.instantiateInitialViewController()!
+//        self.navigationController?.pushViewController(vc, animated: true)
+//        let storyboard: UIStoryboard = UIStoryboard(name: "SendDrawing", bundle: nil)
+//        let vc: PencilKitNavigationController = storyboard.instantiateInitialViewController()!
 //        vc.modalPresentationStyle = .fullScreen
-        let navigationController = UINavigationController(rootViewController: vc)
-        navigationController.modalPresentationStyle = .fullScreen
-        self.show(navigationController, sender: self)
-//        self.present(navigationController, animated: true, completion: nil)
-        
+//        self.show(vc, sender: self)
     }
     
+    
     @IBAction func sendAudio(_ sender: Any) {
-        let storyboard: UIStoryboard = UIStoryboard(name: "SendMail", bundle: nil)
-        let vc: SendMailViewController = storyboard.instantiateViewController(identifier: "sendMail") as SendMailViewController
-        let navigationController = UINavigationController(rootViewController: vc)
-        navigationController.modalPresentationStyle = .fullScreen
-        self.show(navigationController, sender: self)
+//        let storyboard: UIStoryboard = UIStoryboard(name: "SendMail", bundle: nil)
+//        let vc: SendMailViewController = storyboard.instantiateViewController(identifier: "sendMail") as SendMailViewController
+//        let navigationController = UINavigationController(rootViewController: vc)
+//        navigationController.modalPresentationStyle = .fullScreen
+//        self.show(navigationController, sender: self)
     }
     
     

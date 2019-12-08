@@ -38,6 +38,9 @@
 		6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */; };
 		6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */; };
 		6CD20DE523992CF300CE4175 /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DE423992CF300CE4175 /* Letters.swift */; };
+		6CD20DE92399363600CE4175 /* PencilKitNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DE82399363600CE4175 /* PencilKitNavigationController.swift */; };
+		6CD20DEB2399398D00CE4175 /* DrawingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DEA2399398D00CE4175 /* DrawingData.swift */; };
+		6CD20DED239A79B800CE4175 /* PencilKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD20DEC239A79B700CE4175 /* PencilKit.framework */; };
 		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
 		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
 		CD62EAD9239D8963009E3907 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */; };
@@ -103,6 +106,9 @@
 		6CCE3936238821E90078B8CB /* ParentConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ParentConfiguration.storyboard; sourceTree = "<group>"; };
 		6CCE39382388222E0078B8CB /* ParentConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentConfigurationViewController.swift; sourceTree = "<group>"; };
 		6CD20DE423992CF300CE4175 /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Letters.swift; path = OompaLoompa/Controller/Letters.swift; sourceTree = SOURCE_ROOT; };
+		6CD20DE82399363600CE4175 /* PencilKitNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitNavigationController.swift; sourceTree = "<group>"; };
+		6CD20DEA2399398D00CE4175 /* DrawingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawingData.swift; path = OompaLoompa/Controller/DrawingData.swift; sourceTree = SOURCE_ROOT; };
+		6CD20DEC239A79B700CE4175 /* PencilKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PencilKit.framework; path = System/Library/Frameworks/PencilKit.framework; sourceTree = SDKROOT; };
 		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
 		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
 		CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD20DED239A79B800CE4175 /* PencilKit.framework in Frameworks */,
 				EF868275995DB0E7C8396837 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +155,7 @@
 		3B77B5FD9984EDCC1AA965C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CD20DEC239A79B700CE4175 /* PencilKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 				CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */,
 				CDC20700239944D400A9B6A4 /* Music.swift */,
 				CDC20702239945B800A9B6A4 /* MusicPlayer.swift */,
+				6CD20DEA2399398D00CE4175 /* DrawingData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -239,6 +248,7 @@
 				429ADD0523915591009A4B53 /* OnboardCollectionViewCell5.swift */,
 				6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */,
 				34D45088239D62BB00CBA933 /* audioRecordViewController.swift */,
+				6CD20DE82399363600CE4175 /* PencilKitNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +424,7 @@
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				34D45089239D62BB00CBA933 /* audioRecordViewController.swift in Sources */,
+				6CD20DE92399363600CE4175 /* PencilKitNavigationController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,
 				6CCE3935238821A40078B8CB /* SendMailViewController.swift in Sources */,
 				429ADD0623915591009A4B53 /* OnboardCollectionViewCell5.swift in Sources */,
@@ -422,6 +433,7 @@
 				CDE958E42399346B00118A5F /* FoldViewController.swift in Sources */,
 				CDC20703239945B800A9B6A4 /* MusicPlayer.swift in Sources */,
 				CDE958E52399346B00118A5F /* GameScene.swift in Sources */,
+				6CD20DEB2399398D00CE4175 /* DrawingData.swift in Sources */,
 				6C1147B8238D530C008821AE /* Model.swift in Sources */,
 				6C1147B4238D4C32008821AE /* Child.swift in Sources */,
 				6C25F7BB2395319500F466EC /* ImagePicker.swift in Sources */,

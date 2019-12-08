@@ -13,11 +13,13 @@ class Child {
     var name: String
     var image: UIImage
     var letters: [Letters]
+    var id: Int
     
-    init(name: String, image: UIImage, letters: [Letters]) {
+    init(name: String, image: UIImage, letters: [Letters], id: Int) {
         self.name = name
         self.image = image
         self.letters = letters
+        self.id = id
     }
     
 }
