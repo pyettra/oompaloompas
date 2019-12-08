@@ -12,10 +12,29 @@ import UIKit
 class Model {
     
     static let instance = Model()
-    
-    private init(){}
-    
     var children: [Child] = []
+    
+    private init(){
+        
+        number = UserDefaults.standard.object(forKey: "myNumber") as! Int
+    }
+    
+    
+    
+    var number: Int {
+        didSet{
+            UserDefaults.standard.set(self.number, forKey: "myNumber")
+        }
+    }
+    
+    
+    func getDirectory() -> URL {
+        
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask )
+        let documentDirectory = paths[0]
+        return documentDirectory
+    }
+    
 
 }
 
