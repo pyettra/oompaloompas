@@ -82,10 +82,8 @@ extension ChildTableViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard: UIStoryboard = UIStoryboard(name: "ChildrenScreen", bundle: nil)
-        let vc: ChildrenViewController = storyboard.instantiateViewController(identifier: "children") as ChildrenViewController
-        let navigationController = UINavigationController(rootViewController: vc)
-        navigationController.modalPresentationStyle = .fullScreen
-        self.show(navigationController, sender: self)
+        let vc: UITabBarController = storyboard.instantiateInitialViewController()!
+        self.navigationController?.pushViewController(vc, animated: true)
 
     }
     

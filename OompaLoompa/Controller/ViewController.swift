@@ -55,7 +55,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func nextOnboardAction(_ sender: Any) {
         
         var storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: nil)
-        var vc = storyboard.instantiateViewController(identifier: "login") as ChildTableViewController
+        var vc: UINavigationController = storyboard.instantiateInitialViewController()!
         vc.modalPresentationStyle = .fullScreen
         self.show(vc, sender: self)
     }

@@ -42,7 +42,7 @@ class ModalViewController: UIViewController {
     
     
     @IBAction func saveChild(_ sender: Any) {
-        let child: Child = Child(name: nameTxtField.text ?? "", image: childImg.image!)
+        let child: Child = Child(name: nameTxtField.text ?? "", image: childImg.image!, letters: [], id: 1)
         Model.instance.children.append(child)
         NotificationCenter.default.post(name: NSNotification.Name("atualizaChildren"), object: nil, userInfo: nil)
         dismiss(animated: true, completion: nil)

@@ -12,24 +12,47 @@
             <objects>
                 <viewController storyboardIdentifier="sendDrawing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xbR-4I-je3" customClass="SendDrawingViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phd-PH-LGH">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfn-Ho-Kz2" customClass="PKCanvasView">
+                                <rect key="frame" x="0.0" y="56" width="712" height="950.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nfn-Ho-Kz2" firstAttribute="top" secondItem="vkW-cj-hVX" secondAttribute="top" id="67I-IL-qhi"/>
+                            <constraint firstItem="vkW-cj-hVX" firstAttribute="trailing" secondItem="Nfn-Ho-Kz2" secondAttribute="trailing" id="D5p-C4-7ne"/>
+                            <constraint firstItem="Nfn-Ho-Kz2" firstAttribute="leading" secondItem="vkW-cj-hVX" secondAttribute="leading" id="Zyg-3A-Hwj"/>
+                            <constraint firstItem="vkW-cj-hVX" firstAttribute="bottom" secondItem="Nfn-Ho-Kz2" secondAttribute="bottom" id="giP-xk-GtJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vkW-cj-hVX"/>
                     </view>
                     <navigationItem key="navigationItem" title="TESTE" id="0Os-2o-JXH">
                         <barButtonItem key="backBarButtonItem" title="Back button" id="tno-sz-kms"/>
+                        <leftBarButtonItems>
+                            <barButtonItem title="Undo" id="Wcp-hj-qoj"/>
+                            <barButtonItem title="Redo" id="lyO-Z8-Mq0"/>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="paperplane" catalog="system" id="W99-FN-DNT"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="canvasView" destination="Nfn-Ho-Kz2" id="gZ5-fo-ack"/>
+                        <outlet property="redoBarButtonItem" destination="lyO-Z8-Mq0" id="6AW-bA-6S5"/>
+                        <outlet property="send" destination="W99-FN-DNT" id="M6u-XZ-qd6"/>
+                        <outlet property="undoBarButtonitem" destination="Wcp-hj-qoj" id="OcO-Az-geS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6G-2H-mnv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="686.71875" y="-406.73499267935574"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pencil Kit Navigation Controller-->
         <scene sceneID="V3k-Mv-wkh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Cp-kd-mUD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Cp-kd-mUD" customClass="PencilKitNavigationController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2fu-ra-Xgj">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
@@ -38,7 +61,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="xbR-4I-je3" kind="relationship" relationship="rootViewController" id="XTo-r1-72e"/>
+                        <segue destination="xbR-4I-je3" kind="show" identifier="ShowDrawingSegue" id="XBt-bg-X8P"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1h-cM-mUU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,4 +69,7 @@
             <point key="canvasLocation" x="-38.0859375" y="-407.17423133235724"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
