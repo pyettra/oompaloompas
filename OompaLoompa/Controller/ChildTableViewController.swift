@@ -26,7 +26,7 @@ class ChildTableViewController: UIViewController, ModalViewControllerDelegate {
     }
     
     
-    @IBAction func openForm(_ sender: Any) {
+    @IBAction func addChild(_ sender: Any) {
         self.definesPresentationContext = true
         self.providesPresentationContextTransitionStyle = true
         self.overlayBlurredBackgroundView()
