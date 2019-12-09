@@ -220,7 +220,10 @@ class SendDrawingViewController: UIViewController, PKCanvasViewDelegate, PKToolP
     
     
     @IBAction func send(_ sender: Any) {
-//        let drawing = Letters(url: canvasView.drawing, type: .drawing)
+        
+        
+        
+       //let drawing = Letters(url: canvasView.drawing, type: .drawing)
     
     }
     

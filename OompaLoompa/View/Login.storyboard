@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="61R-tQ-JZ2">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="61R-tQ-JZ2">
                                 <rect key="frame" x="0.0" y="460" width="810" height="522"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="50" minimumInteritemSpacing="1" id="ttH-MO-vrF">
@@ -42,8 +42,8 @@
                         <constraints>
                             <constraint firstItem="yH1-zX-DVB" firstAttribute="trailing" secondItem="61R-tQ-JZ2" secondAttribute="trailing" id="E7X-nf-kHl"/>
                             <constraint firstItem="61R-tQ-JZ2" firstAttribute="leading" secondItem="yH1-zX-DVB" secondAttribute="leading" id="OeB-tZ-4nB"/>
-                            <constraint firstItem="61R-tQ-JZ2" firstAttribute="top" secondItem="yH1-zX-DVB" secondAttribute="top" constant="194" id="ktP-2r-syh"/>
-                            <constraint firstItem="yH1-zX-DVB" firstAttribute="bottom" secondItem="61R-tQ-JZ2" secondAttribute="bottom" constant="398" id="q2z-Ne-HXv"/>
+                            <constraint firstItem="61R-tQ-JZ2" firstAttribute="top" secondItem="yH1-zX-DVB" secondAttribute="top" constant="410" id="ktP-2r-syh"/>
+                            <constraint firstItem="yH1-zX-DVB" firstAttribute="bottom" secondItem="61R-tQ-JZ2" secondAttribute="bottom" constant="98" id="q2z-Ne-HXv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yH1-zX-DVB"/>
                     </view>
@@ -82,11 +82,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAI-j1-uvr">
-                                <rect key="frame" x="0.0" y="0.0" width="720" height="1007"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAI-j1-uvr">
+                                <rect key="frame" x="0.0" y="181" width="712" height="539"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhz-Ef-P72">
-                                        <rect key="frame" x="8" y="8" width="20" height="22"/>
+                                        <rect key="frame" x="667" y="8" width="37" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="clear" catalog="system"/>
                                         <connections>
@@ -96,13 +96,6 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-y4-Rip">
                                         <rect key="frame" x="225" y="39" width="270" height="270"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5j-FI-Go3">
-                                        <rect key="frame" x="343" y="648" width="34" height="30"/>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="saveChild:" destination="9bl-cv-Vhi" eventType="touchUpInside" id="rHC-Rm-yX2"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nG-Oc-3L7">
                                         <rect key="frame" x="312" y="317" width="97" height="30"/>
                                         <state key="normal" title="Choose photo"/>
@@ -110,11 +103,20 @@
                                             <action selector="showImagePicker:" destination="9bl-cv-Vhi" eventType="touchUpInside" id="sOG-av-iqT"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-D0-V5f">
-                                        <rect key="frame" x="327" y="393" width="66" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-D0-V5f">
+                                        <rect key="frame" x="327" y="369" width="66" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5j-FI-Go3">
+                                        <rect key="frame" x="315" y="490" width="90" height="32"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveChild:" destination="9bl-cv-Vhi" eventType="touchUpInside" id="rHC-Rm-yX2"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -134,7 +136,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="iAI-j1-uvr" firstAttribute="trailing" secondItem="gJ5-JP-Cre" secondAttribute="trailing" constant="8" id="0je-62-IXo"/>
                             <constraint firstItem="iAI-j1-uvr" firstAttribute="leading" secondItem="gJ5-JP-Cre" secondAttribute="leading" id="4xM-sc-3IH"/>

@@ -11,7 +11,6 @@
         <!--Item-->
         <scene sceneID="jiL-pH-M1M">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1KF-zr-hz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="children" id="o3v-p5-ZCN" customClass="ChildrenViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L7w-8f-3q9">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
@@ -47,10 +46,10 @@
                                     <segue destination="EKb-iS-Gv6" kind="show" id="PTF-ks-RKo"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0j9-Hp-Ijj">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0j9-Hp-Ijj">
                                 <rect key="frame" x="261" y="299" width="514" height="1067"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5fs-PS-h5t">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5fs-PS-h5t">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -114,6 +113,7 @@
                         <outlet property="lettersCollection" destination="0j9-Hp-Ijj" id="ShN-Va-eYQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1KF-zr-hz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2029.6874999999998" y="-176.13469985358711"/>
         </scene>
@@ -133,7 +133,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXR-uz-yal" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1459" y="200"/>
+            <point key="canvasLocation" x="2045" y="310"/>
         </scene>
         <!--audioRecord-->
         <scene sceneID="9Bg-S7-4zc">
@@ -143,7 +143,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUf-r7-tlV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1144" y="200"/>
+            <point key="canvasLocation" x="2014" y="386"/>
         </scene>
         <!--parentConfig-->
         <scene sceneID="En7-No-cHE">
@@ -158,7 +158,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="qf0-Es-OmV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EOd-eC-eyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dma-7W-0kg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ce2-Iw-AQr">
@@ -170,6 +169,7 @@
                         <segue destination="o3v-p5-ZCN" kind="relationship" relationship="viewControllers" id="ny4-IU-Hig"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EOd-eC-eyq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1261" y="-176"/>
         </scene>

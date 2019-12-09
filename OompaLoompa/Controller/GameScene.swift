@@ -59,6 +59,7 @@ class GameScene: SKScene {
             animateStep += 1
         } else {
             print("acabou a dobradura")
+            
         }
     }
     

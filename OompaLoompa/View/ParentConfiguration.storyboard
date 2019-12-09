@@ -19,14 +19,24 @@
                                 <rect key="frame" x="402" y="575" width="221" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchIdAction:" destination="KUL-pr-aDK" eventType="touchUpInside" id="fib-r7-fIm"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-5s-m5R">
+                                <rect key="frame" x="491" y="315" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="r5C-jc-c8h"/>
                     </view>
                     <navigationItem key="navigationItem" id="T85-wC-iKd"/>
                     <connections>
-                        <outlet property="loginButton" destination="m3T-kI-xkI" id="VO7-9k-PTi"/>
+                        <outlet property="successLabel" destination="Toa-5s-m5R" id="WqS-2W-e1H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pC8-eT-pA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -16,25 +16,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-Bh-Bdg">
-                        <rect key="frame" x="71" y="56" width="171" height="128"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-Bh-Bdg">
+                        <rect key="frame" x="71" y="56" width="171" height="146.5"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nome da criança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ij-ydp">
-                        <rect key="frame" x="95.5" y="302" width="129.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da criança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ij-ydp">
+                        <rect key="frame" x="95" y="242.5" width="130" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
-            <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="ChW-Bh-Bdg" secondAttribute="bottom" constant="354" id="2DV-BN-Vum"/>
-                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="12" id="6Vr-Hz-cXC"/>
-                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="71" id="fdi-Sf-BgV"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ChW-Bh-Bdg" secondAttribute="trailing" constant="78" id="mfv-6z-XkW"/>
-                <constraint firstItem="FIO-Ij-ydp" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="nmi-r0-q8z"/>
-                <constraint firstItem="FIO-Ij-ydp" firstAttribute="top" secondItem="ChW-Bh-Bdg" secondAttribute="bottom" constant="118" id="u7g-WD-BZq"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="FIO-Ij-ydp" secondAttribute="trailing" constant="95" id="AJ8-tU-Ld8"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="FIO-Ij-ydp" secondAttribute="trailing" constant="95" id="BeP-vb-EAa"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="FIO-Ij-ydp" secondAttribute="bottom" constant="57" id="Ogv-eb-XDz"/>
+                <constraint firstItem="FIO-Ij-ydp" firstAttribute="top" secondItem="ChW-Bh-Bdg" secondAttribute="bottom" constant="40" id="RGc-fn-nyD"/>
+                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="12" id="TGb-jg-1Vk"/>
+                <constraint firstItem="FIO-Ij-ydp" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="95" id="dEq-mc-f5K"/>
+                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="71" id="kWz-To-kJV"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ChW-Bh-Bdg" secondAttribute="trailing" constant="78" id="pev-K3-4eS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="389" height="538"/>
@@ -42,7 +44,7 @@
                 <outlet property="childImgView" destination="ChW-Bh-Bdg" id="8Of-YE-d5u"/>
                 <outlet property="nameLbl" destination="FIO-Ij-ydp" id="v41-wu-NAj"/>
             </connections>
-            <point key="canvasLocation" x="386.23188405797106" y="316.07142857142856"/>
+            <point key="canvasLocation" x="385.50724637681162" y="316.07142857142856"/>
         </collectionViewCell>
     </objects>
 </document>
