@@ -20,7 +20,6 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     var audioPlayer: AVAudioPlayer!
     var audioFileName: URL!
     
-    
     @IBOutlet weak var imgRecorderAudio: UIImageView!
     @IBOutlet weak var imgPlayAndPause: UIImageView!
     override func viewDidLoad() {
@@ -70,7 +69,11 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func sendAudio(_ sender: Any) {
         
+<<<<<<< HEAD
         let letter: Letters = Letters(url: audioFileName, type: .audio, id: "0")
+=======
+        let letter = Letters.createLetter(audioURL: audioFileName)
+>>>>>>> lucas_branch
         model.children[0].letters.append(letter)
 //        do {
 //            audioFileName.dataRepresentation.write(to: filename)
@@ -81,7 +84,7 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     func startRecording() {
         // onde o áudio fica salvo
-        audioFileName = model.getDirectory().appendingPathComponent("\(uuid).m4a")
+        audioFileName = model.getDirectory().appendingPathComponent("teste.m4a")
 
         // configurações do áudio
         let settings = [
