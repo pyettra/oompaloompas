@@ -13,6 +13,7 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
 
     
     var model = Model.instance
+    let uuid = UUID().uuidString
     
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
@@ -80,7 +81,7 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     func startRecording() {
         // onde o áudio fica salvo
-        audioFileName = model.getDirectory().appendingPathComponent("teste.m4a")
+        audioFileName = model.getDirectory().appendingPathComponent("\(uuid).m4a")
 
         // configurações do áudio
         let settings = [

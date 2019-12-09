@@ -24,6 +24,7 @@ class Model {
     
     var number: Int {
         didSet{
+            
             UserDefaults.standard.set(self.number, forKey: "myNumber")
         }
     }
@@ -36,9 +37,6 @@ class Model {
         return documentDirectory
     }
     
-    
-    
-
     
 
 }
