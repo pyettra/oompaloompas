@@ -11,6 +11,7 @@ import SpriteKit
 
 class GameScene: SKScene {
     
+    weak var parentVc: UIViewController!
     private var letter = SKSpriteNode()
     private var foldLetterFrames: [[SKTexture]] = []
     var animateStep = 0
@@ -60,7 +61,12 @@ class GameScene: SKScene {
         } else {
             print("acabou a dobradura")
             
+            popToChildrenScreen()
         }
+    }
+    
+    func popToChildrenScreen() {
+        self.parentVc.performSegue(withIdentifier: "unwindSegue", sender: self.parentVc)
     }
     
     

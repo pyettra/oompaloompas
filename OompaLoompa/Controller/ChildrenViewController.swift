@@ -32,22 +32,16 @@ class ChildrenViewController: UIViewController {
     }
     
     @IBAction func sendDrawing(_ sender: Any) {
-//        let storyboard: UIStoryboard = UIStoryboard(name: "SendDrawing", bundle: nil)
-//        let vc: UINavigationController = storyboard.instantiateInitialViewController()!
-//        self.navigationController?.pushViewController(vc, animated: true)
-//        let storyboard: UIStoryboard = UIStoryboard(name: "SendDrawing", bundle: nil)
-//        let vc: PencilKitNavigationController = storyboard.instantiateInitialViewController()!
-//        vc.modalPresentationStyle = .fullScreen
-//        self.show(vc, sender: self)
     }
     
     
     @IBAction func sendAudio(_ sender: Any) {
-//        let storyboard: UIStoryboard = UIStoryboard(name: "SendMail", bundle: nil)
-//        let vc: SendMailViewController = storyboard.instantiateViewController(identifier: "sendMail") as SendMailViewController
-//        let navigationController = UINavigationController(rootViewController: vc)
-//        navigationController.modalPresentationStyle = .fullScreen
-//        self.show(navigationController, sender: self)
+    }
+    
+    @IBAction func unwindToChildrenLetters(_ unwindSegue: UIStoryboardSegue) {
+        print("sjdkasjdlsakz")
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
     }
     
 }

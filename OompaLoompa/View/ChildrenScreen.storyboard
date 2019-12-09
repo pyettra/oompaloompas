@@ -125,6 +125,21 @@
             </objects>
             <point key="canvasLocation" x="2470.01953125" y="-8.3455344070278183"/>
         </scene>
+        <!--Open Letter View Controller-->
+        <scene sceneID="hfH-on-ZoS">
+            <objects>
+                <viewController id="ob8-Xa-ldS" customClass="OpenLetterViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMy-lv-QPi">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4jI-TD-zcS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnd-Ec-Z5d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2045" y="750"/>
+        </scene>
         <!--sendDrawing-->
         <scene sceneID="Kgr-8Q-xEM">
             <objects>
