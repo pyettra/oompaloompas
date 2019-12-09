@@ -67,14 +67,10 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
     
-    @IBAction func deleteAudio(_ sender: Any) {
-        
-        
-        
-    }
-    
     @IBAction func sendAudio(_ sender: Any) {
         
+        let letter: Letters = Letters(url: audioFileName, type: .audio)
+        model.children[0].letters.append(letter)
 //        do {
 //            audioFileName.dataRepresentation.write(to: filename)
 //        }
