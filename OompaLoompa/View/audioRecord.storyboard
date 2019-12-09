@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7T-7t-2tD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7T-7t-2tD">
     <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,48 +15,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-uf-JMj">
-                                <rect key="frame" x="346" y="1168" width="333" height="197.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-uf-JMj">
+                                <rect key="frame" x="0.0" y="1092.5" width="1024" height="273"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="largecircle.fill.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-aC-UxY">
-                                        <rect key="frame" x="146.5" y="14" width="40" height="39"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="largecircle.fill.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-aC-UxY">
+                                        <rect key="frame" x="461" y="86" width="102" height="101"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="WHY-7u-WDd" appends="YES" id="WjC-bo-vGX"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-Et-nEQ">
-                                        <rect key="frame" x="73" y="24" width="20" height="19"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-Et-nEQ">
+                                        <rect key="frame" x="230.5" y="111.5" width="51" height="50"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="7nf-G1-K09" appends="YES" id="wIK-PU-ikn"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="trash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-c4-h0p">
-                                        <rect key="frame" x="240" y="22.5" width="20" height="20.5"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1342319048" green="0.90665667480000001" blue="1" alpha="0.47131849320000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="VU2-c4-h0p" firstAttribute="width" secondItem="b3g-aC-UxY" secondAttribute="width" multiplier="0.5" id="CYU-DR-erj"/>
-                                    <constraint firstItem="VU2-c4-h0p" firstAttribute="centerY" secondItem="b3g-aC-UxY" secondAttribute="centerY" id="cdg-FA-W4U"/>
+                                    <constraint firstItem="Saj-Et-nEQ" firstAttribute="centerX" secondItem="q8H-uf-JMj" secondAttribute="centerX" multiplier="0.5" id="XCP-hE-JoD"/>
+                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="height" secondItem="q8H-uf-JMj" secondAttribute="height" multiplier="0.3725" id="Z9F-OT-yeL"/>
+                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="width" secondItem="q8H-uf-JMj" secondAttribute="width" multiplier="0.1" id="bo5-Wh-ZyE"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="height" secondItem="b3g-aC-UxY" secondAttribute="height" multiplier="0.5" id="fbY-fZ-97s"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="centerY" secondItem="b3g-aC-UxY" secondAttribute="centerY" id="jZ7-6l-mgu"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="width" secondItem="b3g-aC-UxY" secondAttribute="width" multiplier="0.5" id="l1B-dQ-vlz"/>
-                                    <constraint firstItem="VU2-c4-h0p" firstAttribute="height" secondItem="b3g-aC-UxY" secondAttribute="height" multiplier="0.5" id="z3o-LL-taP"/>
+                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="centerY" secondItem="q8H-uf-JMj" secondAttribute="centerY" id="t5i-dU-QA5"/>
+                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="centerX" secondItem="q8H-uf-JMj" secondAttribute="centerX" id="w0I-up-4NT"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="q8H-uf-JMj" firstAttribute="centerX" secondItem="nKw-Mw-MHC" secondAttribute="centerX" id="8c0-0i-xir"/>
+                            <constraint firstItem="nKw-Mw-MHC" firstAttribute="bottom" secondItem="q8H-uf-JMj" secondAttribute="bottom" constant="0.5" id="9fQ-d2-ZmS"/>
+                            <constraint firstItem="q8H-uf-JMj" firstAttribute="width" secondItem="J3O-Ac-0jT" secondAttribute="width" id="PTl-Sm-Bys"/>
+                            <constraint firstItem="q8H-uf-JMj" firstAttribute="height" secondItem="J3O-Ac-0jT" secondAttribute="height" multiplier="0.2" id="eOO-cb-iRW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nKw-Mw-MHC"/>
                     </view>
                     <navigationItem key="navigationItem" id="zhb-pe-NU2">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="paperplane" catalog="system" id="G38-Pq-Gdr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="paperplane" catalog="system" id="G38-Pq-Gdr">
+                            <connections>
+                                <action selector="sendAudio:" destination="WDo-pJ-ijw" id="Q3I-4N-bQ6"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imgPlayAndPause" destination="Saj-Et-nEQ" id="v7C-Z2-ZVC"/>
@@ -74,12 +80,6 @@
                         <action selector="playAndStopAudio:" destination="WDo-pJ-ijw" id="fRH-D8-zZ1"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="wHf-LJ-2dQ" userLabel="send">
-                    <connections>
-                        <action selector="sendAudio:" destination="WDo-pJ-ijw" id="qsA-ar-cDv"/>
-                        <segue destination="r4z-Hb-X3s" kind="show" id="ISM-rP-jp3"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-8.203125" y="113.76281112737919"/>
         </scene>
@@ -92,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-6q-w28">
-                                <rect key="frame" x="0.0" y="503" width="1024" height="410"/>
+                                <rect key="frame" x="0.0" y="478" width="1024" height="410"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-Pl-H2V">
                                         <rect key="frame" x="220" y="124.5" width="174" height="160.5"/>
@@ -172,6 +172,5 @@
         <image name="pause.fill" catalog="system" width="58" height="64"/>
         <image name="play.circle" catalog="system" width="64" height="60"/>
         <image name="play.fill" catalog="system" width="58" height="64"/>
-        <image name="trash.fill" catalog="system" width="60" height="64"/>
     </resources>
 </document>
