@@ -26,6 +26,8 @@ class FoldViewController: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
             view.presentScene(scene)
+            
+            gameScene.parentVc = self
 
         }
         // Do any additional setup after loading the view.

@@ -218,13 +218,18 @@ class SendDrawingViewController: UIViewController, PKCanvasViewDelegate, PKToolP
         }
     }
     
-    
-    @IBAction func send(_ sender: Any) {
+    @IBAction func sendAction(_ sender: Any) {
+        let drawing = canvasView.drawing
+        let letter = Letters.createLetter(drawing: drawing)
+        Model.instance.children[0].letters.insert(letter, at: 0)
         
+        let storyboard = UIStoryboard(name: "Animation", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! FoldViewController
+        vc.modalPresentationStyle = .fullScreen
         
+        self.show(vc, sender: self)
         
-       //let drawing = Letters(url: canvasView.drawing, type: .drawing)
-    
     }
+    
     
 }

@@ -12,7 +12,11 @@ import UIKit
 class Child {
     var name: String
     var image: UIImage
-    var letters: [Letters]
+    var letters: [Letters]{
+        didSet{
+        NotificationCenter.default.post(name: NSNotification.Name("updateLetters"), object: nil, userInfo: nil)
+        }
+    }
     var id: Int
     
     init(name: String, image: UIImage, letters: [Letters], id: Int) {

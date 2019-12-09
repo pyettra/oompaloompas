@@ -17,7 +17,7 @@ class Letters {
     var text: String?
     var id: String
     
-    init(url: URL, type: Type, id: String) {
+    init(url: URL, type: Type, id: String = "0") {
         self.url = url
         self.type = type
         self.id = id
@@ -46,6 +46,15 @@ class Letters {
         return drawURL
     }
     
+    func getData(letter: Letters) {
+        if letter.type == .audio {
+            getAudio()
+        } else if letter.type == .drawing {
+            getImage()
+        } else {
+            getText()
+        }
+    }
     
     private func getImage() -> UIImage {
         let data = try? Data(contentsOf: self.url)
@@ -59,6 +68,10 @@ class Letters {
         let playerItem = AVPlayerItem(url: self.url)
         
         return playerItem
+    }
+    
+    private func getText() -> String {
+        return text
     }
     
 }
