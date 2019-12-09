@@ -17,9 +17,14 @@ class PlayerViewController: UIViewController {
     var audioFileName: URL!
     
     var model = Model.instance
+    
+    var path: URL!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        path = model.children[0].letters[0].url
 
         // Do any additional setup after loading the view.
         
@@ -40,10 +45,6 @@ class PlayerViewController: UIViewController {
     }
     
     @IBAction func playAudio(_ sender: Any) {
-        
-        let path = model.getDirectory().appendingPathComponent("teste.m4a")
-        
-        print("path: \(path)")
         
         do {
             try recordingSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
