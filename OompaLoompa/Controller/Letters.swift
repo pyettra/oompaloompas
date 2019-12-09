@@ -86,7 +86,7 @@ class Letters {
     }
     
     private func getText() -> String {
-        return text
+        return text!
     }
     
 }
