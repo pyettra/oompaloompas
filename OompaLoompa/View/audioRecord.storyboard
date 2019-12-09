@@ -1,139 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7T-7t-2tD">
     <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Audio Record View Controller-->
+        <!--Record Audio View Controller-->
         <scene sceneID="vgj-90-TQe">
             <objects>
-                <viewController id="WDo-pJ-ijw" customClass="audioRecordViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="audioRecord" id="WDo-pJ-ijw" customClass="recordAudioViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J3O-Ac-0jT">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsk-MP-JpQ">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1161"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-uf-JMj">
+                                <rect key="frame" x="346" y="1168" width="333" height="197.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-W1-chQ">
-                                        <rect key="frame" x="778.5" y="107.5" width="102.5" height="102"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="wHf-LJ-2dQ" appends="YES" id="cmE-K3-1X3"/>
-                                        </connections>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.1715180838" green="0.1715180838" blue="0.1715180838" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="mpR-W1-chQ" firstAttribute="top" secondItem="xsk-MP-JpQ" secondAttribute="top" constant="107" id="cDw-21-J6T"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-uf-JMj">
-                                <rect key="frame" x="0.0" y="1161" width="1024" height="205"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="largecircle.fill.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-aC-UxY">
-                                        <rect key="frame" x="450.5" y="41.5" width="123" height="122"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="largecircle.fill.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3g-aC-UxY">
+                                        <rect key="frame" x="146.5" y="14" width="40" height="39"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="WHY-7u-WDd" appends="YES" id="WjC-bo-vGX"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-Et-nEQ">
-                                        <rect key="frame" x="225.5" y="72.5" width="61" height="60.5"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Saj-Et-nEQ">
+                                        <rect key="frame" x="73" y="24" width="20" height="19"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="7nf-G1-K09" appends="YES" id="wIK-PU-ikn"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="trash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-c4-h0p">
-                                        <rect key="frame" x="737.5" y="71" width="61" height="62"/>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" image="trash.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VU2-c4-h0p">
+                                        <rect key="frame" x="240" y="22.5" width="20" height="20.5"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1342319048" green="0.90665667480000001" blue="1" alpha="0.47131849320000002" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="width" secondItem="q8H-uf-JMj" secondAttribute="width" multiplier="0.12" id="86u-Fs-J02"/>
-                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="height" secondItem="q8H-uf-JMj" secondAttribute="height" multiplier="0.6" id="8nH-gY-aTG"/>
                                     <constraint firstItem="VU2-c4-h0p" firstAttribute="width" secondItem="b3g-aC-UxY" secondAttribute="width" multiplier="0.5" id="CYU-DR-erj"/>
-                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="centerY" secondItem="q8H-uf-JMj" secondAttribute="centerY" id="LSv-LY-dcP"/>
                                     <constraint firstItem="VU2-c4-h0p" firstAttribute="centerY" secondItem="b3g-aC-UxY" secondAttribute="centerY" id="cdg-FA-W4U"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="height" secondItem="b3g-aC-UxY" secondAttribute="height" multiplier="0.5" id="fbY-fZ-97s"/>
-                                    <constraint firstItem="Saj-Et-nEQ" firstAttribute="centerX" secondItem="q8H-uf-JMj" secondAttribute="centerX" multiplier="0.5" id="gfL-jM-kJX"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="centerY" secondItem="b3g-aC-UxY" secondAttribute="centerY" id="jZ7-6l-mgu"/>
                                     <constraint firstItem="Saj-Et-nEQ" firstAttribute="width" secondItem="b3g-aC-UxY" secondAttribute="width" multiplier="0.5" id="l1B-dQ-vlz"/>
-                                    <constraint firstItem="b3g-aC-UxY" firstAttribute="centerX" secondItem="q8H-uf-JMj" secondAttribute="centerX" id="rHM-Lb-Rju"/>
-                                    <constraint firstItem="VU2-c4-h0p" firstAttribute="centerX" secondItem="q8H-uf-JMj" secondAttribute="centerX" multiplier="1.5" id="tUd-Sw-YHK"/>
                                     <constraint firstItem="VU2-c4-h0p" firstAttribute="height" secondItem="b3g-aC-UxY" secondAttribute="height" multiplier="0.5" id="z3o-LL-taP"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="mpR-W1-chQ" firstAttribute="width" secondItem="nKw-Mw-MHC" secondAttribute="width" multiplier="0.1" id="0Nu-Gh-v1W"/>
-                            <constraint firstItem="mpR-W1-chQ" firstAttribute="height" secondItem="nKw-Mw-MHC" secondAttribute="height" multiplier="0.075" id="5EG-mG-9as"/>
-                            <constraint firstItem="q8H-uf-JMj" firstAttribute="centerX" secondItem="nKw-Mw-MHC" secondAttribute="centerX" id="FG4-oD-vMY"/>
-                            <constraint firstItem="q8H-uf-JMj" firstAttribute="top" secondItem="xsk-MP-JpQ" secondAttribute="bottom" id="FZ9-UQ-BvO"/>
-                            <constraint firstItem="nKw-Mw-MHC" firstAttribute="trailing" secondItem="mpR-W1-chQ" secondAttribute="trailing" constant="143" id="KFh-yb-JcW"/>
-                            <constraint firstItem="xsk-MP-JpQ" firstAttribute="top" secondItem="nKw-Mw-MHC" secondAttribute="top" id="Or2-2j-WMr"/>
-                            <constraint firstItem="xsk-MP-JpQ" firstAttribute="height" secondItem="J3O-Ac-0jT" secondAttribute="height" multiplier="0.849927" id="UmS-EA-bro"/>
-                            <constraint firstItem="xsk-MP-JpQ" firstAttribute="centerX" secondItem="nKw-Mw-MHC" secondAttribute="centerX" id="g3a-ZA-sc4"/>
-                            <constraint firstItem="q8H-uf-JMj" firstAttribute="width" secondItem="nKw-Mw-MHC" secondAttribute="width" id="iaF-mt-kdI"/>
-                            <constraint firstItem="xsk-MP-JpQ" firstAttribute="width" secondItem="J3O-Ac-0jT" secondAttribute="width" id="lLx-zo-CkZ"/>
-                            <constraint firstItem="q8H-uf-JMj" firstAttribute="height" secondItem="nKw-Mw-MHC" secondAttribute="height" multiplier="0.150073" id="llU-b9-Rg8"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nKw-Mw-MHC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zhb-pe-NU2">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="paperplane" catalog="system" id="G38-Pq-Gdr"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="imgRecorderAudio" destination="b3g-aC-UxY" id="Ixf-SL-pBg"/>
+                        <outlet property="imgPlayAndPause" destination="Saj-Et-nEQ" id="v7C-Z2-ZVC"/>
+                        <outlet property="imgRecorderAudio" destination="b3g-aC-UxY" id="su4-GK-CLs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rar-h7-Cu0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="WHY-7u-WDd" userLabel="record">
                     <connections>
-                        <action selector="recordAudio:" destination="WDo-pJ-ijw" id="7dM-8E-5pU"/>
+                        <action selector="recordAudio:" destination="WDo-pJ-ijw" id="cUk-EG-Trg"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="7nf-G1-K09" userLabel="play">
                     <connections>
-                        <action selector="playAndStopAudio:" destination="WDo-pJ-ijw" id="gHO-yp-boc"/>
+                        <action selector="playAndStopAudio:" destination="WDo-pJ-ijw" id="fRH-D8-zZ1"/>
                     </connections>
                 </tapGestureRecognizer>
                 <tapGestureRecognizer id="wHf-LJ-2dQ" userLabel="send">
                     <connections>
-                        <action selector="sendAudio:" destination="WDo-pJ-ijw" id="LDH-bG-Xut"/>
+                        <action selector="sendAudio:" destination="WDo-pJ-ijw" id="qsA-ar-cDv"/>
                         <segue destination="r4z-Hb-X3s" kind="show" id="ISM-rP-jp3"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-639" y="114"/>
+            <point key="canvasLocation" x="-8.203125" y="113.76281112737919"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="dos-T1-2f9">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="r4z-Hb-X3s" customClass="PlayerViewController" customModule="testDraw" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="r4z-Hb-X3s" customClass="PlayerViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tST-OI-vpC">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-6q-w28">
-                                <rect key="frame" x="0.0" y="352.5" width="712" height="302"/>
+                                <rect key="frame" x="0.0" y="503" width="1024" height="410"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-Pl-H2V">
-                                        <rect key="frame" x="153" y="92" width="121" height="117.5"/>
+                                        <rect key="frame" x="220" y="124.5" width="174" height="160.5"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Zf9-Ri-doZ" appends="YES" id="jkU-dK-x8b"/>
                                         </connections>
                                     </imageView>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="pause.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iw4-Bm-VZt">
-                                        <rect key="frame" x="10.5" y="92.5" width="121" height="117"/>
+                                        <rect key="frame" x="15.5" y="125" width="174" height="160"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Wvz-hL-4az" appends="YES" id="AHF-cQ-q1W"/>
@@ -176,7 +145,25 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="277" y="114"/>
+            <point key="canvasLocation" x="1000.7812499999999" y="113.76281112737919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q06-z1-GhR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P7T-7t-2tD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SPc-sK-HmA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WDo-pJ-ijw" kind="relationship" relationship="rootViewController" id="nMd-zf-YdV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyV-FG-1VB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-732.421875" y="113.76281112737919"/>
         </scene>
     </scenes>
     <resources>

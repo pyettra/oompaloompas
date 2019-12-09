@@ -16,7 +16,8 @@ class Model {
     var children: [Child] = []
     
     private init(){
-        number = UserDefaults.standard.object(forKey: "myNumber") as! Int
+        //number = UserDefaults.standard.object(forKey: "myNumber") as! Int
+        number = 0
     }
     
     
