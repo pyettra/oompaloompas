@@ -12,11 +12,13 @@ class OpenSantaLetterViewController: UIViewController {
     
     @IBOutlet weak var replyTextView: UITextView!
     @IBOutlet weak var paperLetterView: UIView!
+    var santaletter = CustomAudioPlayer(fileName: "santaletter.wav")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpPaperLetterView()
         hideKeyboardWhenTappedAround()
+        santaletter.play()
     }
     
     func setUpPaperLetterView() {

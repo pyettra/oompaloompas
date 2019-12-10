@@ -38,7 +38,7 @@ class FoldViewController: UIViewController {
     }
     
     @IBAction func proximo(_ sender: Any) {
-        gameScene.animateLetter()
+        gameScene.nextStep(animateStep: gameScene.animateStep)
     }
 
 }

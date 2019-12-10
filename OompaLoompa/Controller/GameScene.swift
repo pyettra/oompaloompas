@@ -12,57 +12,58 @@ import SpriteKit
 class GameScene: SKScene {
     
     weak var parentVc: UIViewController!
-    private var letter = SKSpriteNode()
-    private var foldLetterFrames: [[SKTexture]] = []
+    private var animation = SKSpriteNode()
+    private var frames: [[SKTexture]] = []
     var animateStep = 0
     
     override func didMove(to view: SKView) {
-      backgroundColor = .white
-        buildLetter()
-        animateLetter()
+        backgroundColor = .white
+        buildAnimation(skTexture: "dobra")
+        animate(arrayFrames: frames)
+        frames.removeAll()
+        //limpa o array de Frames!
+        buildAnimation(skTexture: "correio")
+        animate(arrayFrames: frames)
+        frames.removeAll()
     }
     
-    func buildLetter() {
-      let letterAnimatedAtlas = SKTextureAtlas(named: "dobra")
-
-        for texture in letterAnimatedAtlas.textureNames.sorted() {
-        //quebra o nome em partes, o que tiver antes do _ é o passo e o que tiver depois é o frame.
+    func buildAnimation(skTexture: String) {
+        let animatedAtlas = SKTextureAtlas(named: skTexture)
+        
+        for texture in animatedAtlas.textureNames.sorted() {
             let pedacos = texture.components(separatedBy: "_")
-            let index = Int(pedacos[0])! - 1 //qual pedaço da animação vai tocar
+            let index = Int(pedacos[0])! - 1
             
-            if foldLetterFrames.count > index  {
-                foldLetterFrames[index].append(letterAnimatedAtlas.textureNamed(texture))
+            if frames.count > index {
+                frames[index].append(animatedAtlas.textureNamed(texture))
             } else {
-                foldLetterFrames.append([letterAnimatedAtlas.textureNamed(texture)])
+                frames.append([animatedAtlas.textureNamed(texture)])
             }
-      }
-     
-            let firstFrameTexture = foldLetterFrames[0][0]
-        letter = SKSpriteNode(texture: firstFrameTexture)
-        letter.position = CGPoint(x: frame.midX, y: frame.midY)
-        addChild(letter)
-
+        }
+        
+        let firstFrameTexture = frames[0][0]
+        animation = SKSpriteNode(texture: firstFrameTexture)
+        animation.position = CGPoint(x: frame.midX, y: frame.midY)
+        addChild(animation)
     }
     
-    func animateLetter() {
-        if animateStep < foldLetterFrames.count {
-            letter.run(
-            SKAction.animate(with: foldLetterFrames[animateStep],
-                             timePerFrame: 0.6,
-                             resize: false,
-                             restore: false))
-//            var sfxFold1 = CustomAudioPlayer(fileName: "dobra1.wav")
-//            sfxFold1.play()
-            let sound = selectSound()
-            let sfxFold = SKAction.playSoundFileNamed(sound, waitForCompletion: false)
-            run(sfxFold)
-            print("tocou o som")
+    func animate(arrayFrames: [[SKTexture]]) {
+        if animateStep < arrayFrames.count {
+            animation.run(
+                SKAction.animate(with: arrayFrames[animateStep],
+                                 timePerFrame: 0.1,
+                                 resize: false,
+                                 restore: false))
             animateStep += 1
         } else {
-            print("acabou a dobradura")
-            
-            popToChildrenScreen()
+            print("acabou a animação")
         }
+        
+        //tem que fazer o som.
+    }
+    
+    func nextStep(animateStep: Int) {
+        animate(arrayFrames: frames)
     }
     
     func popToChildrenScreen() {

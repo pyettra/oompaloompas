@@ -225,8 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				CD62EAC5239D88DD009E3907 /* Fonts */,
-				6CCE3916238584A10078B8CB /* Assets.xcassets */,
-				CDC5818C2397F5A0000E3FB0 /* Sound Assets */,
 				6CCE3923238584F10078B8CB /* Controller */,
 				6CCE3922238584EC0078B8CB /* View */,
 				6CCE3921238584E20078B8CB /* Model */,
@@ -252,6 +250,8 @@
 		6CCE3922238584EC0078B8CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CCE3916238584A10078B8CB /* Assets.xcassets */,
+				CDC5818C2397F5A0000E3FB0 /* Sound Assets */,
 				6CCE39132385849D0078B8CB /* Main.storyboard */,
 				6C1147B9238EA585008821AE /* ChildCard.swift */,
 				6C1147BA238EA585008821AE /* ChildCard.xib */,
@@ -679,7 +679,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = ADP5XER6GT;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -697,7 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = ADP5XER6GT;
 				INFOPLIST_FILE = OompaLoompa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

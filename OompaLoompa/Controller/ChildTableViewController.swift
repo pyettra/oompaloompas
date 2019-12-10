@@ -19,6 +19,7 @@ class ChildTableViewController: UIViewController, ModalViewControllerDelegate {
         childrenCollectionView.dataSource = self
         childrenCollectionView.register(UINib(nibName: "ChildCard", bundle: nil), forCellWithReuseIdentifier: "cell")
         NotificationCenter.default.addObserver(self, selector: #selector(reloadCollection), name: NSNotification.Name("atualizaChildren"), object: nil)
+        MusicPlayer.shared.play(.two)
     }
     
     @objc func reloadCollection(_ notification: Notification) {

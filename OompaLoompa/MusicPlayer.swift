@@ -24,9 +24,9 @@ class MusicPlayer {
     private var musics = [Song: Music]()
     
     private init() {
-        musics[.one] = Music(fileName: "musica1")
-        musics[.two] = Music(fileName: "musica2")
-        musics[.three] = Music(fileName: "musica3")
+        musics[.one] = Music(fileName: "musica1.wav")
+        musics[.two] = Music(fileName: "musica2.wav")
+        musics[.three] = Music(fileName: "musica3.wav")
     }
     
     func play(_ songToPlay: Song) {
@@ -35,6 +35,7 @@ class MusicPlayer {
                 music.play()
             } else {
                 music.stop()
+                print("acabou a música?")
             }
         }
     }
