@@ -11,7 +11,6 @@ import AVFoundation
 
 class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
 
-    
     var model = Model.instance
     let uuid = UUID().uuidString
     
@@ -69,8 +68,17 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func sendAudio(_ sender: Any) {
         
-        let letter: Letters = Letters(url: audioFileName, type: "audio", id: UUID().uuidString)
+        let letter = Letters.createLetter(audioURL: audioFileName)
+        
+        
+//        let letter: Letters = Letters(url: audioFileName, type: "audio", id: UUID().uuidString)
         model.children[0].letters.insert(letter, at: 0)
+        
+        let storyboard = UIStoryboard(name: "Animation", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController() as! FoldViewController
+        vc.modalPresentationStyle = .fullScreen
+        
+        self.show(vc, sender: self)
 //        do {
 //            audioFileName.dataRepresentation.write(to: filename)
 //        }

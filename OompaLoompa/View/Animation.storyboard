@@ -30,7 +30,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ui8-h6-08m"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NGk-he-jgT"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="WnK-Ey-tCG" kind="unwind" identifier="unwindSegue" unwindAction="unwindToChildrenLetters:" id="Qph-Tk-o90"/>

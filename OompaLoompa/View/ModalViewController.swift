@@ -19,15 +19,20 @@ class ModalViewController: UIViewController {
     var imagePicker: ImagePicker!
     @IBOutlet weak var modalView: UIView!
     @IBOutlet weak var nameTxtField: UITextField!
+    @IBOutlet weak var addBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         modalView.layer.cornerRadius = modalView.frame.width/17.0
         modalView.layer.masksToBounds = true
         self.childImg.layer.cornerRadius = self.childImg.frame.size.width/2
         self.childImg.clipsToBounds = true
         
+        self.childImg.image = UIImage(named: "elfo")
+        
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
+        addBtn.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
@@ -42,8 +47,9 @@ class ModalViewController: UIViewController {
     
     
     @IBAction func saveChild(_ sender: Any) {
-//        let child: Child = Child(name: nameTxtField.text ?? "", image: childImg.image!, letters: [Letters(url: URL.init(fileURLWithPath: ""), type: "santa"), Letters(url: URL.init(fileURLWithPath: ""), type: .audio), Letters(url: URL.init(fileURLWithPath: ""), type: .drawing), Letters(url: URL.init(fileURLWithPath: ""), type: .santa), Letters(url: URL.init(fileURLWithPath: ""), type: .audio)], id: 1)
-        //Model.instance.children.append(child)
+        let child: Child = Child(name: nameTxtField.text ?? "Criança", image: childImg.image!, letters: [])
+
+        Model.instance.children.append(child)
         NotificationCenter.default.post(name: NSNotification.Name("atualizaChildren"), object: nil, userInfo: nil)
         dismiss(animated: true, completion: nil)
         delegate?.removeBlurredBackgroundView()

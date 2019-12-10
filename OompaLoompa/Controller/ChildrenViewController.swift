@@ -8,10 +8,12 @@
 
 import Foundation
 import UIKit
+import LocalAuthentication
 
 class ChildrenViewController: UIViewController {
 
     @IBOutlet weak var lettersCollection: UICollectionView!
+    @IBOutlet weak var childImgView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,8 @@ class ChildrenViewController: UIViewController {
         lettersCollection.dataSource = self
         lettersCollection.register(UINib(nibName: "LetterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "letterCell")
         NotificationCenter.default.addObserver(self, selector: #selector(reloadCollection), name: NSNotification.Name("updateLetters"), object: nil)
+        
+        childImgView.layer.cornerRadius = 102
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -31,11 +35,44 @@ class ChildrenViewController: UIViewController {
         lettersCollection.reloadData()
     }
     
+    @IBAction func acessoPais(_ sender: Any) {
+        touchIdAction()
+    }
+    
+    func touchIdAction() {
+           
+           print("hello there!.. You have clicked the touch ID")
+           
+           let myContext = LAContext()
+           let myLocalizedReasonString = "Biometric Authntication testing !! "
+           
+           var authError: NSError?
+           if #available(iOS 8.0, macOS 10.12.1, *) {
+               if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                   myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                       
+                       DispatchQueue.main.async {
+                           if success {
+                               
+                           } else {
+                               
+                           }
+                       }
+                   }
+               } else {
+            
+               }
+           } else {
+           }
+           
+           
+       }
+    
     func setUpNavigation() {
-        let replyButton: UIButton = UIButton(type: .system)
-        replyButton.addTarget(self, action: #selector(replyLetter), for: .touchUpInside)
-        replyButton.setTitle("reply letter", for: .normal)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: replyButton)
+//        let replyButton: UIButton = UIButton(type: .system)
+//        replyButton.addTarget(self, action: #selector(replyLetter), for: .touchUpInside)
+//        replyButton.setTitle("reply letter", for: .normal)
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: replyButton)
         
     }
     
@@ -107,7 +144,9 @@ extension ChildrenViewController: UICollectionViewDelegate, UICollectionViewData
             
             let vc = storyboard.instantiateViewController(identifier: "playerView") as! PlayerViewController
             
-            let newURL = Model.instance.getDirectory().appendingPathComponent(letter.id).appendingPathExtension("m4a")
+            let newURL = Model.instance.getDirectory().appendingPathComponent(letter.id)
+                .appendingPathComponent("audio")
+                .appendingPathExtension("m4a")
             
             vc.path = newURL
             vc.modalPresentationStyle = .fullScreen

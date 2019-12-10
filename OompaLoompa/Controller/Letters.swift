@@ -68,7 +68,7 @@ class Letters: Codable {
             print("erro ao criar diretorio", error.description)
         }
         
-        return Letters(url: newPath, type: .audio, id: uuid)
+        return Letters(url: newPath, type: "audio", id: uuid)
     }
     
     static func saveDraw(image: UIImage, at url: URL) -> (URL) {

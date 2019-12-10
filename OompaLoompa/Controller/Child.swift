@@ -22,13 +22,10 @@ class Child {
         }
     }
     
-    var id: Int
     
-    init(name: String, image: UIImage, letters: [Letters], id: Int) {
+    init(name: String, image: UIImage, letters: [Letters]) {
         self.name = name
         self.image = image
-//        self.letters = letters
-        self.id = id
     }
     
 }
