@@ -113,7 +113,7 @@
                                 <rect key="frame" x="205" y="478" width="614" height="410"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-Pl-H2V">
-                                        <rect key="frame" x="255" y="124.5" width="104" height="160.5"/>
+                                        <rect key="frame" x="255" y="123" width="104" height="164"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Zf9-Ri-doZ" appends="YES" id="jkU-dK-x8b"/>
@@ -151,12 +151,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czS-V0-ogk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Zf9-Ri-doZ" userLabel="play">
                     <connections>
-                        <action selector="playAudio:" destination="r4z-Hb-X3s" id="to5-M4-gie"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Wvz-hL-4az" userLabel="pause">
-                    <connections>
-                        <action selector="pauseAudio:" destination="r4z-Hb-X3s" id="4b4-QX-oW1"/>
+                        <action selector="changeState:" destination="r4z-Hb-X3s" id="JgQ-z1-WLT"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

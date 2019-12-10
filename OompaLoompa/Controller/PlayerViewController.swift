@@ -49,9 +49,8 @@ class PlayerViewController: UIViewController {
         }
     }
     
-    @IBAction func playAudio(_ sender: Any) {
-        controlAudioButton.image = UIImage(named: "")
-        
+    func playAudio() {
+        controlAudioButton.image = UIImage(systemName: "pause.fill")
         
         do {
             try recordingSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
@@ -70,7 +69,18 @@ class PlayerViewController: UIViewController {
         
     }
     
-    @IBAction func pauseAudio(_ sender: Any) {
+    @IBAction func changeState(_ sender: Any) {
+        if audioPlayer == nil || !audioPlayer.isPlaying {
+            playAudio()
+            
+        } else {
+            controlAudioButton.image = UIImage(systemName: "play.fill")
+            pauseAudio()
+        }
+    }
+    
+    func pauseAudio() {
+        
         
         do {
             audioPlayer.pause()
