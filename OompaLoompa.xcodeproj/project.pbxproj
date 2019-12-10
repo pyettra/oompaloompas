@@ -56,6 +56,21 @@
 		CD62EAE2239D8963009E3907 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD0239D8962009E3907 /* Poppins-Medium.ttf */; };
 		CD62EAE7239D8963009E3907 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD5239D8962009E3907 /* Poppins-Light.ttf */; };
 		CD62EAE8239D8963009E3907 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAD6239D8963009E3907 /* Poppins-SemiBold.ttf */; };
+		CD62EAFB239F1C47009E3907 /* santawillread.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAEC239F1C44009E3907 /* santawillread.wav */; };
+		CD62EAFC239F1C47009E3907 /* letsdoit.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAED239F1C44009E3907 /* letsdoit.wav */; };
+		CD62EAFD239F1C47009E3907 /* ijustgotyourletter.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAEE239F1C44009E3907 /* ijustgotyourletter.wav */; };
+		CD62EAFE239F1C47009E3907 /* hohoho.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAEF239F1C45009E3907 /* hohoho.wav */; };
+		CD62EAFF239F1C47009E3907 /* wecanpost.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF0239F1C45009E3907 /* wecanpost.wav */; };
+		CD62EB00239F1C47009E3907 /* hi.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF1239F1C45009E3907 /* hi.wav */; };
+		CD62EB01239F1C47009E3907 /* congrats.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF2239F1C45009E3907 /* congrats.wav */; };
+		CD62EB02239F1C47009E3907 /* merryxmas.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF3239F1C45009E3907 /* merryxmas.wav */; };
+		CD62EB03239F1C47009E3907 /* postoffice.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF4239F1C45009E3907 /* postoffice.wav */; };
+		CD62EB04239F1C47009E3907 /* longtripahead.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF5239F1C45009E3907 /* longtripahead.wav */; };
+		CD62EB05239F1C47009E3907 /* finishletter.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF6239F1C45009E3907 /* finishletter.wav */; };
+		CD62EB06239F1C47009E3907 /* youcandraw.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF7239F1C46009E3907 /* youcandraw.wav */; };
+		CD62EB07239F1C47009E3907 /* santaletter.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF8239F1C46009E3907 /* santaletter.wav */; };
+		CD62EB08239F1C47009E3907 /* yourletterisonway.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAF9239F1C46009E3907 /* yourletterisonway.wav */; };
+		CD62EB09239F1C47009E3907 /* wishpile.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAFA239F1C47009E3907 /* wishpile.wav */; };
 		CD9FA560238C11B5002768BD /* OnBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */; };
 		CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */; };
 		CDC20701239944D400A9B6A4 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC20700239944D400A9B6A4 /* Music.swift */; };
@@ -131,6 +146,21 @@
 		CD62EAD0239D8962009E3907 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		CD62EAD5239D8962009E3907 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		CD62EAD6239D8963009E3907 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		CD62EAEC239F1C44009E3907 /* santawillread.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = santawillread.wav; sourceTree = "<group>"; };
+		CD62EAED239F1C44009E3907 /* letsdoit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = letsdoit.wav; sourceTree = "<group>"; };
+		CD62EAEE239F1C44009E3907 /* ijustgotyourletter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ijustgotyourletter.wav; sourceTree = "<group>"; };
+		CD62EAEF239F1C45009E3907 /* hohoho.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hohoho.wav; sourceTree = "<group>"; };
+		CD62EAF0239F1C45009E3907 /* wecanpost.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wecanpost.wav; sourceTree = "<group>"; };
+		CD62EAF1239F1C45009E3907 /* hi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hi.wav; sourceTree = "<group>"; };
+		CD62EAF2239F1C45009E3907 /* congrats.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = congrats.wav; sourceTree = "<group>"; };
+		CD62EAF3239F1C45009E3907 /* merryxmas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = merryxmas.wav; sourceTree = "<group>"; };
+		CD62EAF4239F1C45009E3907 /* postoffice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = postoffice.wav; sourceTree = "<group>"; };
+		CD62EAF5239F1C45009E3907 /* longtripahead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = longtripahead.wav; sourceTree = "<group>"; };
+		CD62EAF6239F1C45009E3907 /* finishletter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finishletter.wav; sourceTree = "<group>"; };
+		CD62EAF7239F1C46009E3907 /* youcandraw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = youcandraw.wav; sourceTree = "<group>"; };
+		CD62EAF8239F1C46009E3907 /* santaletter.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = santaletter.wav; sourceTree = "<group>"; };
+		CD62EAF9239F1C46009E3907 /* yourletterisonway.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = yourletterisonway.wav; sourceTree = "<group>"; };
+		CD62EAFA239F1C47009E3907 /* wishpile.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wishpile.wav; sourceTree = "<group>"; };
 		CD9FA55F238C11B5002768BD /* OnBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewController.swift; sourceTree = "<group>"; };
 		CDC206FE239941E100A9B6A4 /* CustomAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomAudioPlayer.swift; path = OompaLoompa/CustomAudioPlayer.swift; sourceTree = SOURCE_ROOT; };
 		CDC20700239944D400A9B6A4 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Music.swift; path = OompaLoompa/Music.swift; sourceTree = SOURCE_ROOT; };
@@ -295,10 +325,33 @@
 			path = Poppins;
 			sourceTree = "<group>";
 		};
+		CD62EAEB239F1BD0009E3907 /* Dialogue */ = {
+			isa = PBXGroup;
+			children = (
+				CD62EAF2239F1C45009E3907 /* congrats.wav */,
+				CD62EAF6239F1C45009E3907 /* finishletter.wav */,
+				CD62EAF1239F1C45009E3907 /* hi.wav */,
+				CD62EAEF239F1C45009E3907 /* hohoho.wav */,
+				CD62EAEE239F1C44009E3907 /* ijustgotyourletter.wav */,
+				CD62EAED239F1C44009E3907 /* letsdoit.wav */,
+				CD62EAF5239F1C45009E3907 /* longtripahead.wav */,
+				CD62EAF3239F1C45009E3907 /* merryxmas.wav */,
+				CD62EAF4239F1C45009E3907 /* postoffice.wav */,
+				CD62EAF8239F1C46009E3907 /* santaletter.wav */,
+				CD62EAEC239F1C44009E3907 /* santawillread.wav */,
+				CD62EAF0239F1C45009E3907 /* wecanpost.wav */,
+				CD62EAFA239F1C47009E3907 /* wishpile.wav */,
+				CD62EAF7239F1C46009E3907 /* youcandraw.wav */,
+				CD62EAF9239F1C46009E3907 /* yourletterisonway.wav */,
+			);
+			path = Dialogue;
+			sourceTree = "<group>";
+		};
 		CDC5818C2397F5A0000E3FB0 /* Sound Assets */ = {
 			isa = PBXGroup;
 			children = (
-				CDC581942397F6E1000E3FB0 /* SoundEffects */,
+				CD62EAEB239F1BD0009E3907 /* Dialogue */,
+				CDC581942397F6E1000E3FB0 /* Effects */,
 				CDC5818D2397F63D000E3FB0 /* Music */,
 			);
 			path = "Sound Assets";
@@ -314,7 +367,7 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
-		CDC581942397F6E1000E3FB0 /* SoundEffects */ = {
+		CDC581942397F6E1000E3FB0 /* Effects */ = {
 			isa = PBXGroup;
 			children = (
 				CDC5819A2397F95C000E3FB0 /* Correio 1.wav */,
@@ -328,7 +381,7 @@
 				CDC581952397F95B000E3FB0 /* Sino 1.wav */,
 				CDC581982397F95C000E3FB0 /* Sino 2.wav */,
 			);
-			path = SoundEffects;
+			path = Effects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -393,34 +446,49 @@
 				CDC581A32397F95C000E3FB0 /* dobra1.wav in Resources */,
 				6CCE39252388197E0078B8CB /* Login.storyboard in Resources */,
 				CD62EADA239D8963009E3907 /* Poppins-Regular.ttf in Resources */,
+				CD62EB01239F1C47009E3907 /* congrats.wav in Resources */,
 				6CD20DF3239DC76A00CE4175 /* LetterCollectionViewCell.xib in Resources */,
 				CD62EAD9239D8963009E3907 /* Poppins-Thin.ttf in Resources */,
 				CDC581912397F66B000E3FB0 /* musica1.wav in Resources */,
 				CDE958E12399345500118A5F /* Animation.storyboard in Resources */,
+				CD62EB02239F1C47009E3907 /* merryxmas.wav in Resources */,
 				CD62EAE0239D8963009E3907 /* Poppins-Bold.ttf in Resources */,
 				CDC581922397F66B000E3FB0 /* musica2.wav in Resources */,
+				CD62EB08239F1C47009E3907 /* yourletterisonway.wav in Resources */,
 				CD62EAE7239D8963009E3907 /* Poppins-Light.ttf in Resources */,
 				6CCE3931238820F00078B8CB /* ReceiveMail.storyboard in Resources */,
 				6CCE392F238820C80078B8CB /* SendMail.storyboard in Resources */,
+				CD62EB00239F1C47009E3907 /* hi.wav in Resources */,
+				CD62EAFD239F1C47009E3907 /* ijustgotyourletter.wav in Resources */,
 				CDC581A52397F95C000E3FB0 /* dobra3.wav in Resources */,
 				CDC581A62397F95C000E3FB0 /* Correio 4.wav in Resources */,
 				CDC581A42397F95C000E3FB0 /* Correio 1.wav in Resources */,
 				6CCE391A238584A10078B8CB /* LaunchScreen.storyboard in Resources */,
 				CDC581932397F66B000E3FB0 /* musica3.wav in Resources */,
+				CD62EAFE239F1C47009E3907 /* hohoho.wav in Resources */,
 				CDC581A02397F95C000E3FB0 /* Correio 3.wav in Resources */,
+				CD62EB09239F1C47009E3907 /* wishpile.wav in Resources */,
 				6C1147BC238EA585008821AE /* ChildCard.xib in Resources */,
+				CD62EB03239F1C47009E3907 /* postoffice.wav in Resources */,
+				CD62EB07239F1C47009E3907 /* santaletter.wav in Resources */,
+				CD62EAFB239F1C47009E3907 /* santawillread.wav in Resources */,
 				6CCE3917238584A10078B8CB /* Assets.xcassets in Resources */,
 				CDC581A82397F95C000E3FB0 /* Correio 2.wav in Resources */,
+				CD62EB05239F1C47009E3907 /* finishletter.wav in Resources */,
 				6CCE39152385849D0078B8CB /* Main.storyboard in Resources */,
+				CD62EB06239F1C47009E3907 /* youcandraw.wav in Resources */,
 				6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */,
 				6CCE392B23881F290078B8CB /* ChildrenScreen.storyboard in Resources */,
+				CD62EAFC239F1C47009E3907 /* letsdoit.wav in Resources */,
 				CD62EAE2239D8963009E3907 /* Poppins-Medium.ttf in Resources */,
 				CD62EAE8239D8963009E3907 /* Poppins-SemiBold.ttf in Resources */,
 				6CCE3937238821E90078B8CB /* ParentConfiguration.storyboard in Resources */,
 				CDC581A12397F95C000E3FB0 /* dobra2.wav in Resources */,
+				CD62EB04239F1C47009E3907 /* longtripahead.wav in Resources */,
 				CDC5819F2397F95C000E3FB0 /* Sino 1.wav in Resources */,
 				CDC581A72397F95C000E3FB0 /* Plim.wav in Resources */,
 				CDC581A22397F95C000E3FB0 /* Sino 2.wav in Resources */,
+				CD62EAFF239F1C47009E3907 /* wecanpost.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

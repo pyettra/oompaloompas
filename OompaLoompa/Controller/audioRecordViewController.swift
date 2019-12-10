@@ -20,7 +20,6 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     var audioPlayer: AVAudioPlayer!
     var audioFileName: URL!
     
-    
     @IBOutlet weak var imgRecorderAudio: UIImageView!
     @IBOutlet weak var imgPlayAndPause: UIImageView!
     override func viewDidLoad() {
@@ -81,7 +80,7 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     func startRecording() {
         // onde o áudio fica salvo
-        audioFileName = model.getDirectory().appendingPathComponent("\(uuid).m4a")
+        audioFileName = model.getDirectory().appendingPathComponent("teste.m4a")
 
         // configurações do áudio
         let settings = [
