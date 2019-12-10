@@ -24,7 +24,7 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        path = model.children[0].letters[0].url
+        //path = model.children[0].letters[0].url
 
         // Do any additional setup after loading the view.
         

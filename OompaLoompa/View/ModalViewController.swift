@@ -42,8 +42,8 @@ class ModalViewController: UIViewController {
     
     
     @IBAction func saveChild(_ sender: Any) {
-        let child: Child = Child(name: nameTxtField.text ?? "", image: childImg.image!, letters: [Letters(url: URL.init(fileURLWithPath: ""), type: .santa), Letters(url: URL.init(fileURLWithPath: ""), type: .audio), Letters(url: URL.init(fileURLWithPath: ""), type: .drawing), Letters(url: URL.init(fileURLWithPath: ""), type: .santa), Letters(url: URL.init(fileURLWithPath: ""), type: .audio)], id: 1)
-        Model.instance.children.append(child)
+//        let child: Child = Child(name: nameTxtField.text ?? "", image: childImg.image!, letters: [Letters(url: URL.init(fileURLWithPath: ""), type: "santa"), Letters(url: URL.init(fileURLWithPath: ""), type: .audio), Letters(url: URL.init(fileURLWithPath: ""), type: .drawing), Letters(url: URL.init(fileURLWithPath: ""), type: .santa), Letters(url: URL.init(fileURLWithPath: ""), type: .audio)], id: 1)
+        //Model.instance.children.append(child)
         NotificationCenter.default.post(name: NSNotification.Name("atualizaChildren"), object: nil, userInfo: nil)
         dismiss(animated: true, completion: nil)
         delegate?.removeBlurredBackgroundView()

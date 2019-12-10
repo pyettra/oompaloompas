@@ -13,7 +13,7 @@ class Model {
     
     static let instance = Model()
     var selectedChild: Child!
-    var children: [Child] = []
+    var children: [Child] = [Child(name: "joao", image: UIImage(named:"elfo")!, letters: [], id: 0)]
     
     private init(){
         //number = UserDefaults.standard.object(forKey: "myNumber") as! Int

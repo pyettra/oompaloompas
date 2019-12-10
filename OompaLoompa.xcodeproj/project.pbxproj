@@ -45,6 +45,9 @@
 		6CD20DF2239DC76A00CE4175 /* LetterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DF0239DC76A00CE4175 /* LetterCollectionViewCell.swift */; };
 		6CD20DF3239DC76A00CE4175 /* LetterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD20DF1239DC76A00CE4175 /* LetterCollectionViewCell.xib */; };
 		6CD20DF5239E906B00CE4175 /* OpenLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DF4239E906A00CE4175 /* OpenLetterViewController.swift */; };
+		6CD20DF7239F0C1B00CE4175 /* ReplyLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DF6239F0C1A00CE4175 /* ReplyLetterViewController.swift */; };
+		6CD20DF9239F23CA00CE4175 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DF8239F23CA00CE4175 /* UIViewController+Extensions.swift */; };
+		6CD20DFB239F298800CE4175 /* OpenSantaLetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD20DFA239F298800CE4175 /* OpenSantaLetterViewController.swift */; };
 		6CE03D0E23968D0C00019294 /* SendDrawing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */; };
 		6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */; };
 		CD62EAD9239D8963009E3907 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */; };
@@ -117,6 +120,9 @@
 		6CD20DF0239DC76A00CE4175 /* LetterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCollectionViewCell.swift; sourceTree = "<group>"; };
 		6CD20DF1239DC76A00CE4175 /* LetterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LetterCollectionViewCell.xib; sourceTree = "<group>"; };
 		6CD20DF4239E906A00CE4175 /* OpenLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLetterViewController.swift; sourceTree = "<group>"; };
+		6CD20DF6239F0C1A00CE4175 /* ReplyLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyLetterViewController.swift; sourceTree = "<group>"; };
+		6CD20DF8239F23CA00CE4175 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		6CD20DFA239F298800CE4175 /* OpenSantaLetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSantaLetterViewController.swift; sourceTree = "<group>"; };
 		6CE03D0D23968D0C00019294 /* SendDrawing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SendDrawing.storyboard; sourceTree = "<group>"; };
 		6CE03D0F23968D3A00019294 /* SendDrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDrawingViewController.swift; sourceTree = "<group>"; };
 		CD62EAC7239D8961009E3907 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -261,6 +267,9 @@
 				6CD20DE82399363600CE4175 /* PencilKitNavigationController.swift */,
 				34235035239DA22300C1DBFA /* PlayerViewController.swift */,
 				6CD20DF4239E906A00CE4175 /* OpenLetterViewController.swift */,
+				6CD20DF6239F0C1A00CE4175 /* ReplyLetterViewController.swift */,
+				6CD20DF8239F23CA00CE4175 /* UIViewController+Extensions.swift */,
+				6CD20DFA239F298800CE4175 /* OpenSantaLetterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -431,13 +440,16 @@
 				429ADD022391556D009A4B53 /* OnboardCollectionViewCell3.swift in Sources */,
 				6CE03D1023968D3A00019294 /* SendDrawingViewController.swift in Sources */,
 				6CCE39122385849D0078B8CB /* ViewController.swift in Sources */,
+				6CD20DF7239F0C1B00CE4175 /* ReplyLetterViewController.swift in Sources */,
 				429ADCFE2391554C009A4B53 /* OnboardCollectionViewCell1.swift in Sources */,
 				6CCE39392388222E0078B8CB /* ParentConfigurationViewController.swift in Sources */,
 				6CD20DE523992CF300CE4175 /* Letters.swift in Sources */,
 				CDC206FF239941E200A9B6A4 /* CustomAudioPlayer.swift in Sources */,
+				6CD20DFB239F298800CE4175 /* OpenSantaLetterViewController.swift in Sources */,
 				6CCE390E2385849D0078B8CB /* AppDelegate.swift in Sources */,
 				6C1147C023900674008821AE /* ModalViewController.swift in Sources */,
 				34D45089239D62BB00CBA933 /* audioRecordViewController.swift in Sources */,
+				6CD20DF9239F23CA00CE4175 /* UIViewController+Extensions.swift in Sources */,
 				6CD20DF2239DC76A00CE4175 /* LetterCollectionViewCell.swift in Sources */,
 				6CD20DE92399363600CE4175 /* PencilKitNavigationController.swift in Sources */,
 				6CCE392D23881F5C0078B8CB /* ChildrenViewController.swift in Sources */,

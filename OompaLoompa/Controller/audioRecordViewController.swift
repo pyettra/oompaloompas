@@ -70,8 +70,8 @@ class recordAudioViewController: UIViewController, AVAudioRecorderDelegate {
     
     @IBAction func sendAudio(_ sender: Any) {
         
-        let letter: Letters = Letters(url: audioFileName, type: .audio, id: "0")
-        model.children[0].letters.append(letter)
+        let letter: Letters = Letters(url: audioFileName, type: "audio", id: UUID().uuidString)
+        model.children[0].letters.insert(letter, at: 0)
 //        do {
 //            audioFileName.dataRepresentation.write(to: filename)
 //        }
