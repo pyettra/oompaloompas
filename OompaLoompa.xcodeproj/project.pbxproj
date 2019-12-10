@@ -111,7 +111,7 @@
 		6C1147BF23900674008821AE /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModalViewController.swift; path = OompaLoompa/View/ModalViewController.swift; sourceTree = SOURCE_ROOT; };
 		6C22D3DE23913EFA00C63939 /* RespondidasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondidasCell.swift; sourceTree = "<group>"; };
 		6C25F7BA2395319500F466EC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		6CCE390A2385849D0078B8CB /* OompaLoompa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OompaLoompa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCE390A2385849D0078B8CB /* North Pole Mail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "North Pole Mail.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE390D2385849D0078B8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE390F2385849D0078B8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6CCE39112385849D0078B8CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 		6CCE390B2385849D0078B8CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CCE390A2385849D0078B8CB /* OompaLoompa.app */,
+				6CCE390A2385849D0078B8CB /* North Pole Mail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 			);
 			name = OompaLoompa;
 			productName = OompaLoompa;
-			productReference = 6CCE390A2385849D0078B8CB /* OompaLoompa.app */;
+			productReference = 6CCE390A2385849D0078B8CB /* North Pole Mail.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -686,7 +686,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.lu.OompaLoompa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "North Pole Mail";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -704,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.lu.OompaLoompa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "North Pole Mail";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

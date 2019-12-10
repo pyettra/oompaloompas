@@ -9,42 +9,62 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChildCard" customModule="OompaLoompa" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChildCard" customModule="North_Pole_Mail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-Bh-Bdg">
-                        <rect key="frame" x="71" y="56" width="171" height="146.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-Bh-Bdg">
+                        <rect key="frame" x="60" y="104" width="200" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="11u-yx-Sfk"/>
+                            <constraint firstAttribute="width" secondItem="ChW-Bh-Bdg" secondAttribute="height" id="5ft-tV-fAw"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globo" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-5w-5Pq">
+                        <rect key="frame" x="32" y="76" width="256" height="256"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 8" translatesAutoresizingMaskIntoConstraints="NO" id="0ZI-A6-m8l">
+                        <rect key="frame" x="52.5" y="312" width="215" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="111" id="4X6-Y4-mac"/>
+                            <constraint firstAttribute="width" constant="215" id="ENJ-4l-Y5a"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da criança" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ij-ydp">
-                        <rect key="frame" x="95" y="242.5" width="130" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="88" y="363.5" width="144" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
             </view>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="FIO-Ij-ydp" secondAttribute="trailing" constant="95" id="AJ8-tU-Ld8"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="FIO-Ij-ydp" secondAttribute="trailing" constant="95" id="BeP-vb-EAa"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="FIO-Ij-ydp" secondAttribute="bottom" constant="57" id="Ogv-eb-XDz"/>
-                <constraint firstItem="FIO-Ij-ydp" firstAttribute="top" secondItem="ChW-Bh-Bdg" secondAttribute="bottom" constant="40" id="RGc-fn-nyD"/>
-                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="12" id="TGb-jg-1Vk"/>
-                <constraint firstItem="FIO-Ij-ydp" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="95" id="dEq-mc-f5K"/>
-                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="71" id="kWz-To-kJV"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ChW-Bh-Bdg" secondAttribute="trailing" constant="78" id="pev-K3-4eS"/>
+                <constraint firstAttribute="bottom" secondItem="0ZI-A6-m8l" secondAttribute="bottom" constant="8" id="3Ql-hH-WaG"/>
+                <constraint firstItem="0ZI-A6-m8l" firstAttribute="top" secondItem="t8f-5w-5Pq" secondAttribute="bottom" constant="-20" id="4QO-02-Yb5"/>
+                <constraint firstItem="t8f-5w-5Pq" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="A9j-QG-V7a"/>
+                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="centerY" secondItem="t8f-5w-5Pq" secondAttribute="centerY" id="O9T-AS-Vw4"/>
+                <constraint firstItem="t8f-5w-5Pq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Uj2-4j-91S"/>
+                <constraint firstItem="0ZI-A6-m8l" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="b9O-0c-tCt"/>
+                <constraint firstItem="FIO-Ij-ydp" firstAttribute="centerX" secondItem="0ZI-A6-m8l" secondAttribute="centerX" id="k5U-06-d7K"/>
+                <constraint firstItem="FIO-Ij-ydp" firstAttribute="centerY" secondItem="0ZI-A6-m8l" secondAttribute="centerY" multiplier="1.02" id="mID-71-dDp"/>
+                <constraint firstItem="ChW-Bh-Bdg" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="t9N-RW-CeE"/>
+                <constraint firstItem="t8f-5w-5Pq" firstAttribute="width" secondItem="t8f-5w-5Pq" secondAttribute="height" id="xbm-e0-ilp"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="389" height="538"/>
+            <size key="customSize" width="389" height="649"/>
             <connections>
                 <outlet property="childImgView" destination="ChW-Bh-Bdg" id="8Of-YE-d5u"/>
                 <outlet property="nameLbl" destination="FIO-Ij-ydp" id="v41-wu-NAj"/>
             </connections>
-            <point key="canvasLocation" x="385.50724637681162" y="316.07142857142856"/>
+            <point key="canvasLocation" x="385.50724637681162" y="341.18303571428572"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Group 8" width="215" height="125"/>
+        <image name="globo" width="215" height="228"/>
+    </resources>
 </document>

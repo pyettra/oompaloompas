@@ -11,7 +11,7 @@
         <!--login-->
         <scene sceneID="H2n-rF-lU2">
             <objects>
-                <viewController storyboardIdentifier="login" title="login" id="KaE-wU-gNj" customClass="ChildTableViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" title="login" id="KaE-wU-gNj" customClass="ChildTableViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gnq-GW-C6M">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--Modal View Controller-->
         <scene sceneID="bCf-6Y-l9D">
             <objects>
-                <viewController id="9bl-cv-Vhi" customClass="ModalViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9bl-cv-Vhi" customClass="ModalViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qSw-Sn-ggI">
                         <rect key="frame" x="0.0" y="0.0" width="712" height="1006.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,7 +126,7 @@
                                             <action selector="saveChild:" destination="9bl-cv-Vhi" eventType="touchUpInside" id="rHC-Rm-yX2"/>
                                         </connections>
                                     </button>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-y4-Rip">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="hbr-y4-Rip">
                                         <rect key="frame" x="43" y="36" width="270" height="270"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hbr-y4-Rip" secondAttribute="height" multiplier="1:1" id="De0-1R-Jas"/>

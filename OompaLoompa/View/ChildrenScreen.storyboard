@@ -11,7 +11,7 @@
         <!--Children View Controller-->
         <scene sceneID="jiL-pH-M1M">
             <objects>
-                <viewController storyboardIdentifier="children" id="o3v-p5-ZCN" customClass="ChildrenViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="children" id="o3v-p5-ZCN" customClass="ChildrenViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L7w-8f-3q9">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
         <!--Reply Letter View Controller-->
         <scene sceneID="9bq-al-pLQ">
             <objects>
-                <viewController storyboardIdentifier="replyLetter" id="nVN-YB-YXY" customClass="ReplyLetterViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="replyLetter" id="nVN-YB-YXY" customClass="ReplyLetterViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I5f-pV-R2c">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
         <!--Open Letter View Controller-->
         <scene sceneID="hfH-on-ZoS">
             <objects>
-                <viewController storyboardIdentifier="openLetter" id="ob8-Xa-ldS" customClass="OpenLetterViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="openLetter" id="ob8-Xa-ldS" customClass="OpenLetterViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMy-lv-QPi">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +277,7 @@
         <!--Open Santa Letter View Controller-->
         <scene sceneID="Rko-52-gYp">
             <objects>
-                <viewController storyboardIdentifier="openSantaLetter" id="fV6-n5-TVo" customClass="OpenSantaLetterViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="openSantaLetter" id="fV6-n5-TVo" customClass="OpenSantaLetterViewController" customModule="North_Pole_Mail" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oU0-4M-jBo">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

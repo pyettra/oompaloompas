@@ -29,7 +29,7 @@ class ModalViewController: UIViewController {
         self.childImg.layer.cornerRadius = self.childImg.frame.size.width/2
         self.childImg.clipsToBounds = true
         
-        self.childImg.image = UIImage(named: "elfo")
+//        self.childImg.image = UIImage(named: "")
         
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         addBtn.layer.cornerRadius = 10

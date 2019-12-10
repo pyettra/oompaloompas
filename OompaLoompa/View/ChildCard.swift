@@ -16,6 +16,7 @@ class ChildCard: UICollectionViewCell {
     func configure(child: Child) {
         childImgView.image = child.image
         nameLbl.text = child.name
+        childImgView.layer.cornerRadius = 100
     }
     
     override func awakeFromNib() {
