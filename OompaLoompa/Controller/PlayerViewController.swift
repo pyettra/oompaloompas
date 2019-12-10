@@ -16,6 +16,9 @@ class PlayerViewController: UIViewController {
     var audioPlayer: AVAudioPlayer!
     var audioFileName: URL!
     
+    @IBOutlet weak var playerView: UIView!
+    @IBOutlet weak var controlAudioButton: UIImageView!
+    
     var model = Model.instance
     
     var path: URL!
@@ -24,7 +27,9 @@ class PlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        path = model.children[0].letters[0].url
+        playerView.layer.cornerRadius = 30
+        
+        //path = model.children[0].letters[0].url
 
         // Do any additional setup after loading the view.
         
@@ -44,7 +49,8 @@ class PlayerViewController: UIViewController {
         }
     }
     
-    @IBAction func playAudio(_ sender: Any) {
+    func playAudio() {
+        controlAudioButton.image = UIImage(systemName: "pause.fill")
         
         do {
             try recordingSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
@@ -63,7 +69,18 @@ class PlayerViewController: UIViewController {
         
     }
     
-    @IBAction func pauseAudio(_ sender: Any) {
+    @IBAction func changeState(_ sender: Any) {
+        if audioPlayer == nil || !audioPlayer.isPlaying {
+            playAudio()
+            
+        } else {
+            controlAudioButton.image = UIImage(systemName: "play.fill")
+            pauseAudio()
+        }
+    }
+    
+    func pauseAudio() {
+        
         
         do {
             audioPlayer.pause()

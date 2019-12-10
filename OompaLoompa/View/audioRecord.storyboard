@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7T-7t-2tD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7T-7t-2tD">
     <device id="ipad12_9" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="EB2-Tf-1Kx">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="1316"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8H-uf-JMj">
                                 <rect key="frame" x="0.0" y="1092.5" width="1024" height="273"/>
                                 <subviews>
@@ -53,7 +56,11 @@
                             <constraint firstItem="q8H-uf-JMj" firstAttribute="centerX" secondItem="nKw-Mw-MHC" secondAttribute="centerX" id="8c0-0i-xir"/>
                             <constraint firstItem="nKw-Mw-MHC" firstAttribute="bottom" secondItem="q8H-uf-JMj" secondAttribute="bottom" constant="0.5" id="9fQ-d2-ZmS"/>
                             <constraint firstItem="q8H-uf-JMj" firstAttribute="width" secondItem="J3O-Ac-0jT" secondAttribute="width" id="PTl-Sm-Bys"/>
+                            <constraint firstItem="EB2-Tf-1Kx" firstAttribute="leading" secondItem="nKw-Mw-MHC" secondAttribute="leading" id="ReR-hv-GFY"/>
+                            <constraint firstItem="EB2-Tf-1Kx" firstAttribute="bottom" secondItem="nKw-Mw-MHC" secondAttribute="bottom" id="W09-Wq-8C9"/>
                             <constraint firstItem="q8H-uf-JMj" firstAttribute="height" secondItem="J3O-Ac-0jT" secondAttribute="height" multiplier="0.2" id="eOO-cb-iRW"/>
+                            <constraint firstItem="nKw-Mw-MHC" firstAttribute="trailing" secondItem="EB2-Tf-1Kx" secondAttribute="trailing" id="eUI-Ei-zts"/>
+                            <constraint firstItem="EB2-Tf-1Kx" firstAttribute="top" secondItem="nKw-Mw-MHC" secondAttribute="top" id="z4h-lf-XT7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nKw-Mw-MHC"/>
                     </view>
@@ -81,67 +88,70 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-8.203125" y="113.76281112737919"/>
+            <point key="canvasLocation" x="89.6484375" y="-64.128843338213755"/>
+        </scene>
+        <!--Animation-->
+        <scene sceneID="F85-ML-QsW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="animation" storyboardName="Animation" id="fjk-px-HW6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prr-h9-W0C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-262"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="dos-T1-2f9">
             <objects>
-                <viewController modalTransitionStyle="flipHorizontal" id="r4z-Hb-X3s" customClass="PlayerViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="playerView" modalTransitionStyle="flipHorizontal" id="r4z-Hb-X3s" customClass="PlayerViewController" customModule="OompaLoompa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tST-OI-vpC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="SZD-Hv-wO8">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgn-6q-w28">
-                                <rect key="frame" x="0.0" y="478" width="1024" height="410"/>
+                                <rect key="frame" x="205" y="478" width="614" height="410"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LGq-Pl-H2V">
-                                        <rect key="frame" x="220" y="124.5" width="174" height="160.5"/>
+                                        <rect key="frame" x="255" y="123" width="104" height="164"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Zf9-Ri-doZ" appends="YES" id="jkU-dK-x8b"/>
                                         </connections>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="pause.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Iw4-Bm-VZt">
-                                        <rect key="frame" x="15.5" y="125" width="174" height="160"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="Wvz-hL-4az" appends="YES" id="AHF-cQ-q1W"/>
-                                        </connections>
-                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.9318830199" green="1" blue="0.37007472250000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="LGq-Pl-H2V" firstAttribute="width" secondItem="vgn-6q-w28" secondAttribute="width" multiplier="0.17" id="8J9-yO-6wY"/>
-                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="height" secondItem="vgn-6q-w28" secondAttribute="height" multiplier="0.4" id="FZH-oO-l54"/>
-                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="centerX" secondItem="vgn-6q-w28" secondAttribute="centerX" multiplier="0.6" id="ZCS-DC-z7s"/>
+                                    <constraint firstItem="LGq-Pl-H2V" firstAttribute="centerX" secondItem="vgn-6q-w28" secondAttribute="centerX" id="ZCS-DC-z7s"/>
                                     <constraint firstItem="LGq-Pl-H2V" firstAttribute="height" secondItem="vgn-6q-w28" secondAttribute="height" multiplier="0.4" id="dxa-9R-XYm"/>
                                     <constraint firstItem="LGq-Pl-H2V" firstAttribute="centerY" secondItem="vgn-6q-w28" secondAttribute="centerY" id="f4d-EQ-eXh"/>
-                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="centerY" secondItem="vgn-6q-w28" secondAttribute="centerY" id="u77-L5-t9h"/>
-                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="width" secondItem="vgn-6q-w28" secondAttribute="width" multiplier="0.17" id="uYj-Kk-52K"/>
-                                    <constraint firstItem="Iw4-Bm-VZt" firstAttribute="centerX" secondItem="vgn-6q-w28" secondAttribute="centerX" multiplier="0.2" id="xeA-B9-E3d"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SZD-Hv-wO8" firstAttribute="leading" secondItem="5EB-a0-Rki" secondAttribute="leading" id="4uZ-IN-95B"/>
                             <constraint firstItem="vgn-6q-w28" firstAttribute="centerX" secondItem="5EB-a0-Rki" secondAttribute="centerX" id="6fr-rQ-mTa"/>
+                            <constraint firstItem="5EB-a0-Rki" firstAttribute="trailing" secondItem="SZD-Hv-wO8" secondAttribute="trailing" id="Bva-bf-L5w"/>
                             <constraint firstItem="vgn-6q-w28" firstAttribute="centerY" secondItem="5EB-a0-Rki" secondAttribute="centerY" id="EI4-ia-fAU"/>
+                            <constraint firstAttribute="bottom" secondItem="SZD-Hv-wO8" secondAttribute="bottom" id="ZRQ-hM-vZE"/>
+                            <constraint firstItem="SZD-Hv-wO8" firstAttribute="top" secondItem="5EB-a0-Rki" secondAttribute="top" id="pMn-2e-APP"/>
                             <constraint firstItem="vgn-6q-w28" firstAttribute="height" secondItem="tST-OI-vpC" secondAttribute="height" multiplier="0.3" id="xHf-fk-6km"/>
-                            <constraint firstItem="vgn-6q-w28" firstAttribute="width" secondItem="tST-OI-vpC" secondAttribute="width" id="xus-Na-LSJ"/>
+                            <constraint firstItem="vgn-6q-w28" firstAttribute="width" secondItem="tST-OI-vpC" secondAttribute="width" multiplier="0.6" id="xus-Na-LSJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5EB-a0-Rki"/>
                     </view>
                     <navigationItem key="navigationItem" id="fgu-oD-Rii"/>
+                    <connections>
+                        <outlet property="controlAudioButton" destination="LGq-Pl-H2V" id="0RD-KU-m6L"/>
+                        <outlet property="playerView" destination="vgn-6q-w28" id="72d-v2-ZMf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="czS-V0-ogk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Zf9-Ri-doZ" userLabel="play">
                     <connections>
-                        <action selector="playAudio:" destination="r4z-Hb-X3s" id="to5-M4-gie"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="Wvz-hL-4az" userLabel="pause">
-                    <connections>
-                        <action selector="pauseAudio:" destination="r4z-Hb-X3s" id="4b4-QX-oW1"/>
+                        <action selector="changeState:" destination="r4z-Hb-X3s" id="JgQ-z1-WLT"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -167,9 +177,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background2" width="1024" height="1329"/>
         <image name="largecircle.fill.circle" catalog="system" width="64" height="60"/>
         <image name="paperplane" catalog="system" width="64" height="60"/>
-        <image name="pause.fill" catalog="system" width="58" height="64"/>
         <image name="play.circle" catalog="system" width="64" height="60"/>
         <image name="play.fill" catalog="system" width="58" height="64"/>
     </resources>

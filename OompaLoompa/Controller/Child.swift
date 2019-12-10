@@ -13,17 +13,19 @@ class Child {
     var name: String
     var image: UIImage
     var letters: [Letters]{
-        didSet{
-        NotificationCenter.default.post(name: NSNotification.Name("updateLetters"), object: nil, userInfo: nil)
+        get{
+            return Letters.getAllObjects
+        }
+        set{
+            Letters.saveAllObjects(allObjects: newValue)
+            NotificationCenter.default.post(name: NSNotification.Name("updateLetters"), object: nil, userInfo: nil)
         }
     }
-    var id: Int
     
-    init(name: String, image: UIImage, letters: [Letters], id: Int) {
+    
+    init(name: String, image: UIImage, letters: [Letters]) {
         self.name = name
         self.image = image
-        self.letters = letters
-        self.id = id
     }
     
 }

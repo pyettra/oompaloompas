@@ -11,13 +11,33 @@ import UIKit
 import AVFoundation
 import PencilKit
 
-class Letters {
+class Letters: Codable {
     var url: URL
-    var type: Type
+    var type: String
     var text: String?
     var id: String
     
-    init(url: URL, type: Type, id: String = "0") {
+    static var getAllObjects: [Letters] {
+         if let objects = UserDefaults.standard.value(forKey: "letters") as? Data {
+            let decoder = JSONDecoder()
+            if let objectsDecoded = try? decoder.decode(Array.self, from: objects) as [Letters] {
+               return objectsDecoded
+            } else {
+               return []
+            }
+         } else {
+            return []
+         }
+      }
+
+    static func saveAllObjects(allObjects: [Letters]) {
+         let encoder = JSONEncoder()
+         if let encoded = try? encoder.encode(allObjects){
+            UserDefaults.standard.set(encoded, forKey: "letters")
+         }
+    }
+    
+    init(url: URL, type: String, id: String = "0") {
         self.url = url
         self.type = type
         self.id = id
@@ -33,7 +53,7 @@ class Letters {
             print("erro ao criar diretorio", error.description)
         }
         let drawURL = saveDraw(image: image, at: letterURL)
-        return Letters(url: drawURL, type: .drawing, id: uuid)
+        return Letters(url: drawURL, type: "drawing", id: uuid)
     }
     
     static func createLetter(audioURL: URL) -> Letters {
@@ -48,7 +68,7 @@ class Letters {
             print("erro ao criar diretorio", error.description)
         }
         
-        return Letters(url: newPath, type: .audio, id: uuid)
+        return Letters(url: newPath, type: "audio", id: uuid)
     }
     
     static func saveDraw(image: UIImage, at url: URL) -> (URL) {
@@ -62,31 +82,38 @@ class Letters {
     }
     
     func getData(letter: Letters) {
-        if letter.type == .audio {
+        if letter.type == "audio" {
             getAudio()
-        } else if letter.type == .drawing {
+        } else if letter.type == "drawing" {
             getImage()
         } else {
             getText()
         }
     }
     
-    private func getImage() -> UIImage {
-        let data = try? Data(contentsOf: self.url)
+    func getImage() -> UIImage {
+        //let newUrl = URL(fileURLWithPath: self.url.path)
+        let newURL = Model.instance.getDirectory().appendingPathComponent(self.id).appendingPathComponent("draw").appendingPathExtension("png")
+        
+        let data = try? Data(contentsOf: newURL)
         guard let image = UIImage(data: data!) else {
-            fatalError()
+            //fatalError()
+            return UIImage(named: "elfo")!
         }
         return image
+
     }
     
-    private func getAudio() -> AVPlayerItem {
-        let playerItem = AVPlayerItem(url: self.url)
+    func getAudio() -> AVPlayerItem {
+        let newURL = Model.instance.getDirectory().appendingPathComponent(self.id).appendingPathExtension("m4a")
+        
+        let playerItem = AVPlayerItem(url: newURL)
         
         return playerItem
     }
     
-    private func getText() -> String {
-        return text!
+    func getText() -> String {
+        return text ?? ""
     }
     
 }

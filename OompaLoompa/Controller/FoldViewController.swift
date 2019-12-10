@@ -34,7 +34,7 @@ class FoldViewController: UIViewController {
     }
     
     override var prefersStatusBarHidden: Bool {
-        return true
+        return false
     }
     
     @IBAction func proximo(_ sender: Any) {
